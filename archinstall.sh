@@ -1,9 +1,3 @@
-iwctl
-#station wlan0 get-networks
-#station wlan0 connect aterm*g
-#(enter password)
-#exit
-ip a
 fdisk -l
 cfdisk /dev/nvme0n1 #if SSD or HDD is /dev/nvme0n1
 #(create / and swap partition(type=linux swap) and remenber device name)
@@ -14,12 +8,21 @@ cfdisk /dev/nvme0n1 #if SSD or HDD is /dev/nvme0n1
 #efi system: /dev/nvme0n1p1
 #
 
-mkfs.ext4 /dev/nvme0n1p5
-mkswap /dev/nvme0n1p6
-swapon /dev/nvme0n1p6
-mount /dev/nvme0n1p5 /mnt
-mkdir /mnt/efi
-mount -o remount,size=1G /run/archiso/cowspace
+#Format & mount partitions
+#mkfs.ext4 /dev/nvme0n1p5
+#mkswap /dev/nvme0n1p6
+#swapon /dev/nvme0n1p6
+#mount /dev/nvme0n1p5 /mnt
+#mkdir /mnt/efi
+#mount -o remount,size=1G /run/archiso/cowspace
+
+iwctl
+#station wlan0 get-networks
+#station wlan0 connect aterm*g
+#(enter password)
+#exit
+ip a
+
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
