@@ -1,5 +1,5 @@
 # arch-setup
-Installer &amp; setup script for Arch Linux in i3
+Installer &amp; setup script for Arch Linux in i3(UEFI)
 
 # Usage
 <pre>
@@ -8,5 +8,6 @@ mv arch-setup/* ~
 su
 sh archinstall.sh
 </pre>
+- Change username from kenter as you like.
 - This script does not format, mount partitions, and connect to wifi automatically.
 Refer to commented out commands in [archinstall.sh](archinstall.sh) to do them.
