@@ -8,3 +8,5 @@ mv arch-setup/* ~
 su
 sh archinstall.sh
 </pre>
+- This script does not format, mount partitions, and connect to wifi automatically.
+Refer to commented out commands in [archinstall.sh](archinstall.sh) to do them.
