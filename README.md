@@ -1,5 +1,5 @@
 # arch-setup
-Installer &amp; setup script for Arch Linux in i3(UEFI)
+Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
 
 # Usage
 <pre>
