@@ -58,3 +58,6 @@ echo 'clear lock
 clear control
 keycode 66 = Control_L
 add control = Control_L Control_R' > .Xmodmap
+
+#enable wifi on startup
+systemctl enable netctl-auto@$(ip r | cut -d " " -f 5 | head -n 1).service
