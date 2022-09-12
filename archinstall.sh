@@ -65,4 +65,4 @@ systemctl enable netctl-auto@$(ip r | cut -d " " -f 5 | head -n 1).service
 echo 'MiscMenubarDefault=FALSE' >> ~/.config/xfce4/terminal/terminalrc 
 #make display scale larger
 echo 'Xft.dpi: 120' > ~/.Xresources
- xrdb .Xresources 
+xrdb .Xresources 
