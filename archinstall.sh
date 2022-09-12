@@ -61,3 +61,5 @@ add control = Control_L Control_R' > .Xmodmap
 
 #enable wifi on startup
 systemctl enable netctl-auto@$(ip r | cut -d " " -f 5 | head -n 1).service
+#hide xfce4-terminal scrollbar by default
+echo 'MiscMenubarDefault=FALSE' >> ~/.config/xfce4/terminal/terminalrc 
