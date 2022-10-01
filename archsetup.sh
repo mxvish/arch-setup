@@ -17,3 +17,6 @@ echo 'MiscMenubarDefault=FALSE' >> ~/.config/xfce4/terminal/terminalrc
 #make display scale larger
 echo 'Xft.dpi: 120' > ~/.Xresources
 xrdb .Xresources 
+
+#for xampp
+pacman -Syu --noconfirm inetutils libxcrypt-compat
