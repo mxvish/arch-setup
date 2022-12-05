@@ -39,7 +39,7 @@ echo -e '
 ::1\tlocalhost
 127.0.0.1\tkenter.localdomain\tkenter' >> /etc/hosts
 
-pacman -Syu netctl dialog dhcpcd wpa_supplicant ifplugd grub efibootmgr os-prober --noconfirm
+pacman -Syu --noconfirm netctl dialog dhcpcd wpa_supplicant ifplugd iwd grub efibootmgr os-prober
 useradd -G wheel,audio,video -m kenter
 passwd kenter
 grub-install --target=x86_64-efi --efi-directory=/efi/ --bootloader-id=GRUB
