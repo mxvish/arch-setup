@@ -46,4 +46,18 @@ grub-install --target=x86_64-efi --efi-directory=/efi/ --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 passwd
 exit
+
+#setup for wifi
+systemctl enable iwd.service
+systemctl start iwd.service
+systemctl enable systemd-resolved.service
+systemctl start systemd-resolved.service
+
+echo '
+[General]
+EnableNetworkConfiguration=true
+
+[Network]
+NameResolvingService=systemd' > /etc/iwd/main.conf
+
 reboot
