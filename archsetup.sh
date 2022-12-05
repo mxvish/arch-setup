@@ -34,6 +34,13 @@ xrdb .Xresources
 
 #for xampp
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
-
+mv bashrc .bashrc
+mv config  .config/i3/
+mv grub /etc/default/
+mv i3status.conf /etc/
 mv vimrc ~/.vimrc
+
+grub-mkconfig -o /boot/grub/grub.cfg
+#edit /boot/grub/grub.cfg like grub.cfg in this repo
+
 reboot
