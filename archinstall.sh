@@ -14,6 +14,7 @@ cfdisk /dev/nvme0n1 #if SSD or HDD is /dev/nvme0n1
 #swapon /dev/nvme0n1p6
 #mount /dev/nvme0n1p5 /mnt
 #mkdir /mnt/efi
+#mount /dev/nvme0n1p1 /mnt/efi
 #mount -o remount,size=1G /run/archiso/cowspace
 
 iwctl
