@@ -22,3 +22,4 @@ xrdb .Xresources
 pacman -Syu --noconfirm inetutils libxcrypt-compat
 
 mv vimrc ~/.vimrc
+reboot
