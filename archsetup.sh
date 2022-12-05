@@ -1,3 +1,16 @@
+#setup for wifi
+systemctl enable iwd.service
+systemctl start iwd.service
+systemctl enable systemd-resolved.service
+systemctl start systemd-resolved.service
+
+echo '
+[General]
+EnableNetworkConfiguration=true
+
+[Network]
+NameResolvingService=systemd' > /etc/iwd/main.conf
+
 pacman -Syu --noconfirm alsa-utils bash-completion dmenu fcitx fcitx-configtool fcitx-mozc git i3-wm i3lock i3status jdk-openjdk man network-manager-applet otf-ipafont sudo unzip vim vlc xfce4-terminal xorg-server xorg-xinit xterm
 echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
