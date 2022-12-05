@@ -33,7 +33,7 @@ echo 'Xft.dpi: 120' > ~/.Xresources
 xrdb .Xresources 
 
 #for xampp
-pacman -Syu --noconfirm inetutils libxcrypt-compat
+#pacman -Syu --noconfirm inetutils libxcrypt-compat
 
 mv vimrc ~/.vimrc
 reboot
