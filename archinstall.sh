@@ -36,7 +36,7 @@ echo 'LANG=en_US.UTF-8' > /etc/locale.conf
 echo 'kenter' > /etc/hostname
 echo -e '
 127.0.0.1\tlocalhost
-::1\tlocalhost
+::1\t\tlocalhost
 127.0.0.1\tkenter.localdomain\tkenter' >> /etc/hosts
 
 pacman -Syu --noconfirm dhcpcd dialog efibootmgr grub ifplugd iwd netctl os-prober wpa_supplicant
