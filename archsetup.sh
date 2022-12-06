@@ -3,6 +3,8 @@ systemctl enable iwd.service
 systemctl start iwd.service
 systemctl enable systemd-resolved.service
 systemctl start systemd-resolved.service
+systemctl enable NetworkManager.service
+systemctl start NetworkManager.service
 
 echo '
 [General]
