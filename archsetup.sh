@@ -1,11 +1,3 @@
-#setup for wifi
-systemctl enable iwd.service
-systemctl start iwd.service
-systemctl enable systemd-resolved.service
-systemctl start systemd-resolved.service
-systemctl enable NetworkManager.service
-systemctl start NetworkManager.service
-
 echo '
 [General]
 EnableNetworkConfiguration=true
@@ -27,6 +19,14 @@ add control = Control_L Control_R' > .Xmodmap
 
 #enable wifi on startup
 #systemctl enable netctl-auto@$(ip r | cut -d " " -f 5 | head -n 1).service
+
+#setup for wifi
+systemctl enable iwd.service
+systemctl start iwd.service
+systemctl enable systemd-resolved.service
+systemctl start systemd-resolved.service
+systemctl enable NetworkManager.service
+systemctl start NetworkManager.service
 
 #hide xfce4-terminal scrollbar by default
 echo 'MiscMenubarDefault=FALSE' >> ~/.config/xfce4/terminal/terminalrc 
