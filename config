@@ -113,7 +113,7 @@ bar {
 exec --no-startup-id fcitx -d
 
 bindsym $mod+b exec brave
-bindsym $mod+c exec java ~/first/cd.java
+bindsym $mod+c exec java ~/cd.java
 bindsym $mod+Shift+c exec brave docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
 bindsym $mod+e exec brave keep.google.com
 bindsym $mod+g exec brave gakujo.shizuoka.ac.jp
