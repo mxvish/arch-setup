@@ -28,10 +28,6 @@ EnableNetworkConfiguration=true
 [Network]
 NameResolvingService=systemd' > /etc/iwd/main.conf
 
-#make display scale larger
-echo 'Xft.dpi: 120' > ~/.Xresources
-xrdb .Xresources 
-
 #for xampp
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
 
