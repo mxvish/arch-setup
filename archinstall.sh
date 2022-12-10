@@ -1,5 +1,6 @@
-fdisk -l
-cfdisk /dev/nvme0n1 #if SSD or HDD is /dev/nvme0n1
+#fdisk -l
+#cfdisk /dev/nvme0n1 #if SSD or HDD is /dev/nvme0n1
+
 #(create / and swap partition(type=linux swap) and remenber device name)
 #(for example)
 #
@@ -17,12 +18,12 @@ cfdisk /dev/nvme0n1 #if SSD or HDD is /dev/nvme0n1
 #mount /dev/nvme0n1p1 /mnt/efi
 #mount -o remount,size=1G /run/archiso/cowspace
 
-iwctl
+#iwctl
 #station wlan0 get-networks
 #station wlan0 connect aterm*g
 #(enter password)
 #exit
-ip a
+#ip a
 
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
