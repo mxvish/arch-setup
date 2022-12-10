@@ -11,9 +11,9 @@
 
 #Format & mount partitions
 #mkfs.ext4 /dev/nvme0n1p5
+#mount /dev/nvme0n1p5 /mnt
 #mkswap /dev/nvme0n1p6
 #swapon /dev/nvme0n1p6
-#mount /dev/nvme0n1p5 /mnt
 #mkdir /mnt/efi
 #mount /dev/nvme0n1p1 /mnt/efi
 #mount -o remount,size=1G /run/archiso/cowspace
@@ -46,5 +46,3 @@ passwd kenter
 grub-install --target=x86_64-efi --efi-directory=/efi/ --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 passwd
-exit
-reboot
