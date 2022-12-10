@@ -36,10 +36,10 @@ xrdb .Xresources
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
 
 mv bashrc .bashrc
-mv config  .config/i3/
+#mv config  .config/i3/
 mv grub /etc/default/
-mv i3status.conf /etc/
-mv terminalrc > ~/.config/xfce4/terminal/
+#mv i3status.conf /etc/
+#mv terminalrc > ~/.config/xfce4/terminal/
 #mv vimrc ~/.vimrc
 
 grub-mkconfig -o /boot/grub/grub.cfg
