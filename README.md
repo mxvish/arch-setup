@@ -22,6 +22,7 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
   
 # How to Enable Touchpad
 
+(This is operated by executing [archsetup.sh](archsetup.sh).)
 1. (This can be skipped)Change the below line of touchpad driver configuration shown by running `xinput` command.
   
    Before:
