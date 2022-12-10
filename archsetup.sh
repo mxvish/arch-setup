@@ -39,4 +39,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 rm archinstall.sh archsetup.sh LICENSE README.md
 
+mkdir /mnt/usb
+
 reboot
