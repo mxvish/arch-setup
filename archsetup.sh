@@ -46,4 +46,6 @@ mv grub /etc/default/
 grub-mkconfig -o /boot/grub/grub.cfg
 #edit /boot/grub/grub.cfg like grub.cfg in this repo
 
+rm archinstall.sh archsetup.sh LICENSE README.md
+
 reboot
