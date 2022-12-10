@@ -11,6 +11,8 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
   git clone https://github.com/mxvish/arch-setup.git
   mv arch-setup/* ~
   sh archinstall.sh
+  exit
+  reboot
   ```
   - Change username from `kenter` as you like.
   - This script does not format, mount partitions, and connect to wifi automatically.
