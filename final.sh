@@ -4,6 +4,9 @@ mkdir -p ~/.config/xfce4/terminal
 mv terminalrc > ~/.config/xfce4/terminal/
 mv vimrc ~/.vimrc
 
+#make display scale larger
+echo 'Xft.dpi: 120' > ~/.Xresources
+
 pacman -S --needed --noconfirm base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
