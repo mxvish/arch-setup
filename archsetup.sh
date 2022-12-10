@@ -38,7 +38,8 @@ xrdb .Xresources
 mv bashrc .bashrc
 #mv config  .config/i3/
 mv grub /etc/default/
-#mv i3status.conf /etc/
+#sudo mv i3status.conf /etc/
+#mkdir -p ~/.config/xfce4/terminal
 #mv terminalrc > ~/.config/xfce4/terminal/
 #mv vimrc ~/.vimrc
 
