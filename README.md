@@ -4,9 +4,12 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
 # Usage
 - Install Arch on PC
   ```sh
+  #After creating partitions, mounting partitions and connecting to the Internet.
+  pacstrap /mnt base linux linux-firmware git
+  genfstab -U /mnt >> /mnt/etc/fstab
+  arch-chroot /mnt
   git clone https://github.com/mxvish/arch-setup.git
   mv arch-setup/* ~
-  su
   sh archinstall.sh
   ```
   - Change username from `kenter` as you like.
