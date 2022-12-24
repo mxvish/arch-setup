@@ -28,8 +28,8 @@
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
-ln -sf /usr/share/zoneinfo/US/Eastern /etc/localtime
-hwclock --systohc
+ln -sf /usr/share/zoneinfo/Japan /etc/localtime
+hwclock -w
 
 echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen
 locale-gen
