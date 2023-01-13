@@ -1,4 +1,4 @@
-pacman -Syu --noconfirm alsa-utils bash-completion dmenu fcitx fcitx-configtool fcitx-mozc git i3-wm i3lock i3status jdk-openjdk man network-manager-applet otf-ipafont polkit r ranger scrot sudo unzip vim vlc xclip xfce4-terminal xorg-server xorg-xinit xterm
+pacman -Syu --noconfirm alsa-utils bash-completion dmenu fcitx fcitx-configtool fcitx-mozc git i3-wm i3lock i3status jdk-openjdk man network-manager-applet otf-ipafont polkit r ranger scrot sudo tk unzip vim vlc xclip xfce4-terminal xorg-server xorg-xinit xterm
 echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
 fi' >> .bash_profile
