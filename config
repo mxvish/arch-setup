@@ -112,6 +112,7 @@ bar {
 
 exec --no-startup-id fcitx -d
 
+bindsym $mod+a exec brave amazon.co.jp
 bindsym $mod+b exec brave
 bindsym $mod+c exec java ~/cd.java
 bindsym $mod+Shift+c exec brave docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
@@ -125,18 +126,20 @@ bindsym $mod+m exec brave mail.google.com/mail/u/0/h/
 bindsym $mod+Shift+m exec brave mxvish.github.io
 bindsym $mod+o exec brave onedrive.live.com
 bindsym $mod+Shift+o exec brave outlook.office.com
+bindsym $mod+p exec systemctl poweroff
 bindsym $mod+r exec brave drive.google.com/drive/my-drive
-bindsym $mod+Ctrl+r exec brave https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
+bindsym $mod+Ctrl+r exec systemctl reboot -i
 bindsym $mod+s exec brave app.slack.com/client
+bindsym $mod+Shift+s exec brave https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
+bindsym $mod+Ctrl+s exec brave https://ib.surugabank.co.jp/im/IBGate
 bindsym $mod+t exec brave https://todoist.com/app/upcoming
 bindsym $mod+u exec brave https://opac.lib.shizuoka.ac.jp/opac/xc/search/?filter[0]=place_fc%3A"HAMA"
 bindsym $mod+v exec brave docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
 bindsym $mod+w exec brave google.com/search?q=weather
 bindsym $mod+x exec i3lock
 bindsym $mod+Shift+x exec i3-msg exit
-bindsym $mod+y exec brave https://youtube.com/playlist?list=LL
+bindsym $mod+y exec brave https://youtube.com/playlist?list=WL
 
-# exit i3 (logs you out of your X session)
 bindsym Print exec scrot
 
 # resize window (you can also use the mouse for that)
