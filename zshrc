@@ -46,7 +46,6 @@ alias xc='xclip -sel c <'
 precmd() {print ""}
 PS1='%1~ $'
 
-xrdb ~/.Xresources
 xrandr --output eDP-1 --brightness 0.2
 xrandr --output HDMI-1 --auto --left-of eDP-1
 xrandr --output HDMI-1 --rotate left
