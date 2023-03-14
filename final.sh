@@ -9,12 +9,4 @@ echo 'Xft.dpi: 120' > ~/.Xresources
 
 flatpak install -y brave
 
-:'
-pacman -S --needed --noconfirm base-devel
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-makepkg -si --noconfirm
-yay -S --noconfirm brave-bin
-'
-
 reboot
