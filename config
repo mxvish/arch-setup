@@ -112,33 +112,33 @@ bar {
 
 exec --no-startup-id fcitx -d
 
-bindsym $mod+a exec brave amazon.co.jp
-bindsym $mod+b exec brave
+bindsym $mod+a exec com.brave.Browser amazon.co.jp
+bindsym $mod+b exec com.brave.Browser
 bindsym $mod+c exec java ~/cd.java
-bindsym $mod+Shift+c exec brave docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
-bindsym $mod+e exec brave keep.google.com
-bindsym $mod+g exec brave gakujo.shizuoka.ac.jp
-bindsym $mod+Shift+g exec brave github.com/mxvish/?tab=repositories
-bindsym $mod+Shift+h exec brave https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
-bindsym $mod+i exec brave discord.com/channels/@me
-bindsym $mod+Shift+k exec brave https://www.kyorindo-netsuper.jp
-bindsym $mod+m exec brave mail.google.com/mail/u/0/h/
-bindsym $mod+Shift+m exec brave mxvish.github.io
-bindsym $mod+o exec brave onedrive.live.com
-bindsym $mod+Shift+o exec brave outlook.office.com
+bindsym $mod+Shift+c exec com.brave.Browser docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
+bindsym $mod+e exec com.brave.Browser keep.google.com
+bindsym $mod+g exec com.brave.Browser gakujo.shizuoka.ac.jp
+bindsym $mod+Shift+g exec com.brave.Browser github.com/mxvish/?tab=repositories
+bindsym $mod+Shift+h exec com.brave.Browser https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
+bindsym $mod+i exec com.brave.Browser discord.com/channels/@me
+bindsym $mod+Shift+k exec com.brave.Browser https://www.kyorindo-netsuper.jp
+bindsym $mod+m exec com.brave.Browser mail.google.com/mail/u/0/h/
+bindsym $mod+Shift+m exec com.brave.Browser mxvish.github.io
+bindsym $mod+o exec com.brave.Browser onedrive.live.com
+bindsym $mod+Shift+o exec com.brave.Browser outlook.office.com
 bindsym $mod+p exec systemctl poweroff
-bindsym $mod+r exec brave drive.google.com/drive/my-drive
+bindsym $mod+r exec com.brave.Browser drive.google.com/drive/my-drive
 bindsym $mod+Ctrl+r exec systemctl reboot -i
-bindsym $mod+s exec brave app.slack.com/client
-bindsym $mod+Shift+s exec brave https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
-bindsym $mod+Ctrl+s exec brave https://ib.surugabank.co.jp/im/IBGate
-bindsym $mod+t exec brave https://todoist.com/app/upcoming
-bindsym $mod+u exec brave https://opac.lib.shizuoka.ac.jp/opac/xc/search/?filter[0]=place_fc%3A"HAMA"
-bindsym $mod+v exec brave docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
-bindsym $mod+w exec brave google.com/search?q=weather
+bindsym $mod+s exec com.brave.Browser app.slack.com/client
+bindsym $mod+Shift+s exec com.brave.Browser https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
+bindsym $mod+Ctrl+s exec com.brave.Browser https://ib.surugabank.co.jp/im/IBGate
+bindsym $mod+t exec com.brave.Browser https://todoist.com/app/upcoming
+bindsym $mod+u exec com.brave.Browser https://opac.lib.shizuoka.ac.jp/opac/xc/search/?filter[0]=place_fc%3A"HAMA"
+bindsym $mod+v exec com.brave.Browser docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
+bindsym $mod+w exec com.brave.Browser google.com/search?q=weather
 bindsym $mod+x exec i3lock
 bindsym $mod+Shift+x exec i3-msg exit
-bindsym $mod+y exec brave https://youtube.com/playlist?list=WL
+bindsym $mod+y exec com.brave.Browser https://youtube.com/playlist?list=WL
 
 bindsym Print exec scrot
 
