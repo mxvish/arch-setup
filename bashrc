@@ -42,6 +42,7 @@ alias xc='xclip -sel c <'
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W \# $'
 
+xmodmap ~/.Xmodmap
 xrdb ~/.Xresources
 xrandr --output eDP-1 --brightness 0.2
 xrandr --output HDMI-1 --auto --left-of eDP-1
