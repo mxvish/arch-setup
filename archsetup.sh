@@ -1,4 +1,4 @@
-pacman -Syu --noconfirm alsa-utils bash-completion dmenu emacs-nox fcitx fcitx-configtool fcitx-mozc git i3-wm i3lock i3status jdk-openjdk man network-manager-applet otf-ipafont polkit ranger sudo unzip vim xclip xfce4-terminal xorg-server xorg-xinit xorg-xrandr xterm
+pacman -Syu --noconfirm acpilight alsa-utils bash-completion dmenu emacs-nox fcitx fcitx-configtool fcitx-mozc git i3-wm i3lock i3status jdk-openjdk man network-manager-applet otf-ipafont polkit ranger sudo unzip vim xclip xfce4-terminal xorg-server xorg-xinit xorg-xrandr xterm
 
 echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
