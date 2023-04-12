@@ -43,4 +43,6 @@ rm archinstall.sh archsetup.sh LICENSE README.md
 
 mkdir /mnt/usb
 
+xbacklight -set 20
+
 reboot
