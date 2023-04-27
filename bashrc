@@ -27,6 +27,12 @@ alias b='brave'
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias dh='df -h'
 alias f='free -m'
+function i {
+    url="https://duckduckgo.com/?q=wiki+"
+    url+=${@}
+    url+="&t=brave&ia=web"
+    brave $url
+}
 alias li='clisp'
 alias ls='ls --color=auto'
 alias md='sudo mount /dev/sda2 /mnt/usb'
