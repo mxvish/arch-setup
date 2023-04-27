@@ -5,6 +5,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
 alias 0='xrandr --output eDP-1 --brightness 0.04'
 alias 1='xrandr --output eDP-1 --brightness 0.07'
 alias 2='xrandr --output eDP-1 --brightness 0.15'
@@ -45,11 +53,3 @@ xrdb ~/.Xresources
 xrandr --output eDP-1 --brightness 0.2
 xrandr --output HDMI-1 --auto --left-of eDP-1
 xrandr --output HDMI-1 --rotate left
-
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
