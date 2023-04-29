@@ -13,6 +13,8 @@ yay -S --noconfirm brave-bin
 
 curl -fLos ~/.emacs.d/init.el --create-dirs https://raw.githubusercontent.com/mxvish/init.el/main/init.el
 
+wget https://raw.githubusercontent.com/mxvish/GUI-timer/main/cd.java
+
 reboot
 
 #change brave font to FreeSans by Settings -> appearance -> customize fonts
