@@ -16,7 +16,8 @@ fi
 alias 0='xrandr --output eDP-1 --brightness 0.04'
 alias 1='xrandr --output eDP-1 --brightness 0.07'
 alias 2='xrandr --output eDP-1 --brightness 0.15'
-alias 5='xrandr --output eDP-1 --brightness 0.5'
+alias 3='xrandr --output eDP-1 --brightness 0.3'
+alias 10='xrandr --output eDP-1 --brightness 1'
 function aw {
     local url="https://duckduckgo.com/?q=arch+wiki+"
     url+=${@}
@@ -26,6 +27,7 @@ function aw {
 alias b='brave'
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias dh='df -h'
+alias e='emacs'
 alias f='free -m'
 function i {
     url="https://duckduckgo.com/?q=wiki+"
@@ -49,13 +51,16 @@ alias v='vim'
 alias vc='vim ~/.config/i3/config'
 alias vv='vim ~/.vimrc'
 alias x='xdg-open'
+alias xe='xrandr --output eDP-1 --brightness'
+alias xm='xmodmap ~/.Xmodmap'
 alias xc='xclip -sel c <'
 
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W \# $'
 
-xmodmap ~/.Xmodmap
+feh --bg-max ~/arch.png
 xrdb ~/.Xresources
-xrandr --output eDP-1 --brightness 0.2
+xmodmap ~/.Xmodmap
+xrandr --output eDP-1 --brightness 0.5
 xrandr --output HDMI-1 --auto --left-of eDP-1
-xrandr --output HDMI-1 --rotate left
+#xrandr --output HDMI-1 --rotate left
