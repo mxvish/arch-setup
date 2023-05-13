@@ -44,7 +44,7 @@ alias op='vim ~/.bashrc; source ~/.bashrc'
 alias p='python3 -O'
 alias r='ranger'
 alias rr='rm -rf'
-alias si='yay -Scyu --noconfirm; sudo pacman -Scyu --noconfirm'
+alias si='yay -Sc --noconfirm; yay -Syu --noconfirm; sudo pacman -Sc --noconfirm; sudo pacman -Syu --noconfirm'
 alias sr='sudo pacman -R --noconfirm;sudo pacman -Rns $(pacman -Qdtq) --noconfirm
 '
 alias ud='sudo umount /dev/sda2'
