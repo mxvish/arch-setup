@@ -14,6 +14,7 @@ packages=(
 	i3status
 	jdk-openjdk
 	man
+	neofetch
 	network-manager-applet
 	otf-ipafont
 	polkit
