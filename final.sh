@@ -14,6 +14,7 @@ yay -S --noconfirm brave-bin
 curl -fLos ~/.emacs.d/init.el --create-dirs https://raw.githubusercontent.com/mxvish/init.el/main/init.el
 
 wget https://raw.githubusercontent.com/mxvish/GUI-timer/main/cd.java
+wget https://raw.githubusercontent.com/00xBAD/arch-logo/main/arch_outline.png
 
 reboot
 
