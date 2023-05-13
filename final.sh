@@ -18,5 +18,40 @@ wget https://raw.githubusercontent.com/mxvish/GUI-timer/main/cd.java
 wget https://raw.githubusercontent.com/00xBAD/arch-logo/main/arch_outline.png
 
 reboot
-
-#change brave font to FreeSans by Settings -> appearance -> customize fonts
+:'
+brave
+    Settings -> appearance -> customize fonts, choose FreeSans
+    Uncheck 
+        appeareance
+            show book marks button
+            show brave news button ~
+            show autocpmplete suggestions ~
+            show tab search button
+            show sidebar button
+        brave rewards
+            show brave rewards ~
+            show tip buttons ~
+        social media blocking
+            google
+        privacy and security
+            clear browsing data
+                on exit
+                    browsing
+                    download
+                    cached ~
+                    autofill form
+            site and shields ~
+                location
+                    do not allow
+                notification
+                    do not allow
+                additional permissions
+                    autoplay
+                        block(not allow)
+        web3
+            show brave wallet icon ~
+    check
+        system
+            memory saver
+                
+'
