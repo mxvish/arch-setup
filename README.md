@@ -22,8 +22,9 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
   ```sh
   su
   sh archsetup.sh
+  sh final.sh
   ```
-  - For more information about what this command does, see [archsetup.sh](archsetup.sh).
+  - For more information about what this command does, see [archsetup.sh](archsetup.sh) and [final.sh](final.sh).
   
 # How to Enable Touchpad
 
