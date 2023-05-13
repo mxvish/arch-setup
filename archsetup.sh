@@ -1,4 +1,34 @@
-pacman -Syu --noconfirm acpilight alsa-utils bash-completion dmenu emacs-nox fcitx fcitx-configtool fcitx-mozc feh git i3-wm i3lock i3status jdk-openjdk man network-manager-applet otf-ipafont polkit ranger sudo unzip vim xclip xfce4-terminal xorg-server xorg-xinit xorg-xrandr xterm
+packages=(
+	acpilight
+	alsa-utils
+	bash-completion
+	dmenu
+	emacs-nox
+	fcitx
+	fcitx-configtool
+	fcitx-mozc
+	feh
+	git
+	i3-wm
+	i3lock
+	i3status
+	jdk-openjdk
+	man
+	network-manager-applet
+	otf-ipafont
+	polkit
+	ranger
+	sudo
+	unzip
+	vim
+	xclip
+	xfce4-terminal
+	xorg-server
+	xorg-xinit
+	xorg-xrandr
+	xterm)
+
+for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
 
 echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
