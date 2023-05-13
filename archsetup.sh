@@ -21,6 +21,7 @@ packages=(
 	sudo
 	unzip
 	vim
+	wget
 	xclip
 	xfce4-terminal
 	xorg-server
