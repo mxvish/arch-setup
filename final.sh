@@ -5,8 +5,9 @@ mv vimrc ~/.vimrc
 #make display scale larger
 echo 'Xft.dpi: 120' > ~/.Xresources
 
-pacman -S --needed --noconfirm base-devel
+pacman -Syu --needed --noconfirm base-devel
 git clone https://aur.archlinux.org/yay-bin.git
+sudo chown $(whoami):$(whoami) yay-bin
 cd yay-bin
 makepkg -si --noconfirm
 yay -S --noconfirm brave-bin
