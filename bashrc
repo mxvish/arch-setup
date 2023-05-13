@@ -59,7 +59,7 @@ alias xc='xclip -sel c <'
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W \# $'
 
-feh --bg-max ~/arch.png
+feh --bg-max ~/arch_outline.png
 xrdb ~/.Xresources
 xmodmap ~/.Xmodmap
 xrandr --output eDP-1 --brightness 0.5
