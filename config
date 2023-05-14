@@ -142,7 +142,6 @@ bindsym $mod+v exec brave docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH3
 bindsym $mod+Shift+v exec brave vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
 bindsym $mod+w exec brave google.com/search?q=weather
 bindsym $mod+x exec i3lock -c 000000
-bindsym $mod+Shift+x exec i3-msg exit
 bindsym $mod+y exec brave https://youtube.com/playlist?list=WL
 
 bindsym Print exec scrot
