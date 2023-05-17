@@ -20,18 +20,21 @@ alias 3='xrandr --output eDP-1 --brightness 0.3'
 alias 10='xrandr --output eDP-1 --brightness 1'
 function aw {
     local url="https://duckduckgo.com/?q=arch+wiki+"
-    url+=${@}
+	for arg in $@; do
+		url+="$arg+"
+	done
     url+="&t=brave&ia=web"
     brave $url
 }
-alias b='brave'
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias dh='df -h'
 alias e='emacs'
 alias f='free -m'
 function i {
     url="https://duckduckgo.com/?q=wiki+"
-    url+=${@}
+	for arg in $@; do
+		url+="$arg+"
+	done
     url+="&t=brave&ia=web"
     brave $url
 }
