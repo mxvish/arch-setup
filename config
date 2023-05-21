@@ -41,8 +41,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal --hide-menubar --font='Source Code Pro 10'
-bindsym Mod1+Ctrl+t exec xfce4-terminal --hide-menubar --font='Source Code Pro 10'
+bindsym $mod+Return exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Source Code Pro 10'
+bindsym Mod1+Ctrl+t exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Source Code Pro 10'
 
 # kill focused window
 bindsym $mod+q kill
@@ -126,6 +126,7 @@ bindsym $mod+Shift+k exec brave https://www.kyorindo-netsuper.jp
 bindsym $mod+Shift+l exec brave https://overleaf.com
 bindsym $mod+m exec brave mail.google.com/mail/u/0/h/
 bindsym $mod+Shift+m exec brave mxvish.github.io
+bindsym $mod+Ctrl+m exec brave google.com/maps
 bindsym $mod+n exec brave notion.so
 bindsym $mod+o exec brave onedrive.live.com
 bindsym $mod+Shift+o exec brave outlook.office.com
