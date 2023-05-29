@@ -45,9 +45,6 @@ brave
                     do not allow
                 notification
                     do not allow
-                additional permissions
-                    autoplay
-                        block(not allow)
         web3
             show brave wallet icon ~
     check
