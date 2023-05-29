@@ -20,10 +20,14 @@ wget https://raw.githubusercontent.com/00xBAD/arch-logo/main/arch_outline.png
 reboot
 :'
 brave
+    appearance
+        brave colors = dark
+    new tab page = blank
     Settings -> appearance -> customize fonts, choose FreeSans
     Uncheck 
         appeareance
-            show book marks button
+            show bookmarks = never
+            show bookmarks button
             show brave news button ~
             show autocpmplete suggestions ~
             show tab search button
