@@ -19,6 +19,13 @@ wget https://raw.githubusercontent.com/00xBAD/arch-logo/main/arch_outline.png
 
 reboot
 :'
+fcitx
+    fcitx-config-gtk3
+        input method
+            add mozc
+        global config
+            trigger input method
+      
 brave
     appearance
         brave colors = dark
