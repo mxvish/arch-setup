@@ -45,7 +45,7 @@ keycode 66 = Control_L
 add control = Control_L Control_R' > .Xmodmap
 
 #enable wifi on startup
-systemctl enable netctl-auto@$wlan0.service
+systemctl enable netctl-auto@wlan0.service
 
 #setup for wifi
 systemctl enable iwd.service
