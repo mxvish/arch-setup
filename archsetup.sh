@@ -22,6 +22,7 @@ packages=(
 	sudo
 	unzip
 	vim
+	vivaldi
 	wget
 	xclip
 	xfce4-terminal
