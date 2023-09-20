@@ -3,7 +3,7 @@ sudo mv i3status.conf /etc/
 mv vimrc ~/.vimrc
 
 #make display scale larger
-echo 'Xft.dpi: 120' > ~/.Xresources
+mv Xresources ~/.Xresources
 :'
 pacman -Syu --needed --noconfirm base-devel
 git clone https://aur.archlinux.org/yay-bin.git
