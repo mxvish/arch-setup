@@ -8,6 +8,7 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
   pacstrap /mnt base linux linux-firmware git
   genfstab -U /mnt >> /mnt/etc/fstab
   arch-chroot /mnt
+  pacman -S --noconfirm git
   git clone https://github.com/mxvish/arch-setup.git
   mv arch-setup/* ~
   sh archinstall.sh
