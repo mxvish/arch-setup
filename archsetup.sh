@@ -1,3 +1,21 @@
+#enable wifi on startup
+systemctl enable netctl-auto@wlan0.service
+
+#setup for wifi
+systemctl enable iwd.service
+systemctl start iwd.service
+systemctl enable systemd-resolved.service
+systemctl start systemd-resolved.service
+systemctl enable NetworkManager.service
+systemctl start NetworkManager.service
+
+echo '
+[General]
+EnableNetworkConfiguration=true
+
+[Network]
+NameResolvingService=systemd' > /etc/iwd/main.conf
+
 packages=(
 	acpilight
 	alsa-utils
@@ -44,24 +62,6 @@ echo 'clear lock
 clear control
 keycode 66 = Control_L
 add control = Control_L Control_R' > .Xmodmap
-
-#enable wifi on startup
-systemctl enable netctl-auto@wlan0.service
-
-#setup for wifi
-systemctl enable iwd.service
-systemctl start iwd.service
-systemctl enable systemd-resolved.service
-systemctl start systemd-resolved.service
-systemctl enable NetworkManager.service
-systemctl start NetworkManager.service
-
-echo '
-[General]
-EnableNetworkConfiguration=true
-
-[Network]
-NameResolvingService=systemd' > /etc/iwd/main.conf
 
 #for xampp
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
