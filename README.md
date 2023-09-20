@@ -14,7 +14,7 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
   exit
   reboot
   ```
-  - Change username from `kenter` as you like.
+  - Change username from `mxvish` as you like.
   - This script does not format, mount partitions, and connect to wifi automatically.
   Refer to commented out commands in [archinstall.sh](archinstall.sh) to do them.
 

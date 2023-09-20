@@ -34,15 +34,15 @@ hwclock -w
 echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen
 locale-gen
 echo 'LANG=en_US.UTF-8' > /etc/locale.conf
-echo 'kenter' > /etc/hostname
+echo 'mxvish' > /etc/hostname
 echo -e '
 127.0.0.1\tlocalhost
 ::1\t\tlocalhost
-127.0.0.1\tkenter.localdomain\tkenter' >> /etc/hosts
+127.0.0.1\tmxvish.localdomain\tmxvish' >> /etc/hosts
 
 pacman -Syu --noconfirm dhcpcd dialog efibootmgr grub ifplugd iwd netctl os-prober wpa_supplicant
-useradd -G wheel,audio,video -m kenter
-passwd kenter
+useradd -G wheel,audio,video -m mxvish
+passwd mxvish
 grub-install --target=x86_64-efi --efi-directory=/efi/ --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 passwd
