@@ -21,6 +21,10 @@ wget https://raw.githubusercontent.com/00xBAD/arch-logo/main/arch_outline.png
 
 reboot
 :'
+su
+EDITOR=vim visudo
+#uncomment line that begins with # %wheel
+
 fcitx
     fcitx-config-gtk3
         input method
