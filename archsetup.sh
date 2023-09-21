@@ -20,6 +20,8 @@ packages=(
 	acpilight
 	alsa-utils
 	bash-completion
+ 	bluez
+  	bluez-utils 
 	dmenu
 	emacs-nox
 	fcitx
@@ -36,6 +38,8 @@ packages=(
 	network-manager-applet
 	otf-ipafont
 	polkit
+ 	pulseaudio
+ 	pulseaudio-bluetooth
 	ranger
 	sudo
 	unzip
@@ -50,6 +54,9 @@ packages=(
 	xterm)
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
+
+systemctl enable bluetooth.service
+systemctl start bluetooth.service
 
 echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
