@@ -76,12 +76,12 @@ add control = Control_L Control_R' > .Xmodmap
 mv bashrc .bashrc
 mv grub /etc/default/
 
+mkdir /mnt/mx /mnt/usb
+#mount /dev/nvme0n1p3 /mnt/mx for slackware?
 grub-mkconfig -o /boot/grub/grub.cfg
-#edit /boot/grub/grub.cfg like grub.cfg in this repo
+#edit /boot/grub/grub.cfg like grub.cfg in this repo?
 
 rm archinstall.sh archsetup.sh LICENSE README.md
-
-mkdir /mnt/mx /mnt/usb
 
 xbacklight -set 20
 
