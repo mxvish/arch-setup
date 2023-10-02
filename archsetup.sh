@@ -41,6 +41,7 @@ packages=(
  	pulseaudio
  	pulseaudio-bluetooth
 	ranger
+ 	scrot
 	sudo
 	unzip
 	vim
