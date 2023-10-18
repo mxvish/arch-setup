@@ -40,6 +40,7 @@ packages=(
 	polkit
  	pulseaudio
  	pulseaudio-bluetooth
+  	r
 	ranger
  	scrot
 	sudo
