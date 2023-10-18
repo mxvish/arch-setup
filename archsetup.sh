@@ -28,11 +28,13 @@ packages=(
 	fcitx-configtool
 	fcitx-mozc
 	feh
+ 	gcc
 	git
 	i3-wm
 	i3lock
 	i3status
 	jdk-openjdk
+	make
 	man
 	neofetch
 	network-manager-applet
