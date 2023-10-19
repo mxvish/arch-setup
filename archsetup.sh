@@ -24,6 +24,7 @@ packages=(
   	bluez-utils 
 	dmenu
 	emacs-nox
+ 	exfatprogs
 	fcitx
 	fcitx-configtool
 	fcitx-mozc
