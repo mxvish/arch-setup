@@ -17,7 +17,6 @@ mkdir ~/.emacs.d/
 mv init.el ~/.emacs.d/
 
 wget https://raw.githubusercontent.com/mxvish/GUI-timer/main/cd.java
-wget https://raw.githubusercontent.com/00xBAD/arch-logo/main/arch_outline.png
 
 amixer set Master unmute
 amixer set Speaker unmute
