@@ -52,6 +52,7 @@ brave
             show autocpmplete suggestions ~
             show tab search button
             show sidebar button
+            page zoom = 110%
         brave rewards
             show brave rewards ~
             show tip buttons ~
