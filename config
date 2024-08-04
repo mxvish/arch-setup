@@ -114,6 +114,7 @@ exec --no-startup-id fcitx -d
 
 bindsym $mod+a exec brave amazon.co.jp
 bindsym $mod+b exec brave
+bindsym $mod+Shift+b exec brave "https://fes.rakuten-bank.co.jp/MS/main/RbS?CurrentPageID=START&&COMMAND=LOGIN"
 bindsym $mod+c exec java ~/cd.java
 bindsym $mod+Shift+c exec brave docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
 bindsym $mod+Ctrl+c exec brave chat.openai.com
