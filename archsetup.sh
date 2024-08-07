@@ -86,6 +86,15 @@ mkdir /mnt/mx /mnt/usb
 grub-mkconfig -o /boot/grub/grub.cfg
 #edit /boot/grub/grub.cfg like grub.cfg in this repo?
 
+echo 'Section "InputClass"
+     Identifier "libinput touchpad catchall"
+     MatchIsTouchpad "on"
+     MatchDevicePath "/dev/input/event*"
+     Option "Tapping" "True"
+     Option "TappingDrag" "True"
+     Driver "libinput"
+EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
+
 rm archinstall.sh archsetup.sh LICENSE README.md
 
 xbacklight -set 20
