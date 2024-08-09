@@ -23,7 +23,6 @@ packages=(
  	bluez
   	bluez-utils 
 	dmenu
-	emacs-nox
  	exfatprogs
 	fcitx
 	fcitx-configtool
@@ -34,7 +33,6 @@ packages=(
 	i3-wm
 	i3lock
 	i3status
-	jdk-openjdk
 	make
 	man
 	neofetch
