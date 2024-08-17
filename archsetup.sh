@@ -46,7 +46,6 @@ packages=(
  	scrot
 	sudo
 	unzip
-	vim
 	vivaldi
 	wget
 	xclip
