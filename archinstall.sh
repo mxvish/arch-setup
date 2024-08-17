@@ -40,7 +40,7 @@ echo -e '
 ::1\t\tlocalhost
 127.0.0.1\tmxvish.localdomain\tmxvish' >> /etc/hosts
 
-pacman -Syu --noconfirm dhcpcd dialog efibootmgr grub ifplugd iwd netctl os-prober wpa_supplicant
+pacman -Syu --noconfirm dhcpcd dialog efibootmgr grub ifplugd iwd netctl os-prober vim wpa_supplicant
 useradd -G wheel,audio,video -m mxvish
 passwd mxvish
 grub-install --target=x86_64-efi --efi-directory=/efi/ --bootloader-id=GRUB
