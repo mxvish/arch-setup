@@ -38,6 +38,17 @@ function i {
     url+="&t=brave&ia=web"
     brave $url
 }
+function ii {
+	url="https://duckduckgo.com/?q=wiki+"
+	for arg in $@; do
+		url+="$arg+"
+	done
+	brave $url
+	url+="+pixiv"
+	brave $url
+	url=`echo "$url" | sed 's/pixiv/dic.nicovideo/'`
+	brave $url
+}
 alias li='clisp'
 alias ls='ls --color=auto'
 alias md='sudo mount /dev/sda2 /mnt/usb'
