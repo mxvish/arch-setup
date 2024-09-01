@@ -41,8 +41,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Source Code Pro 10'
-bindsym Mod1+Ctrl+t exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Source Code Pro 10'
+bindsym $mod+Return exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Source Code Pro 12'
+bindsym Mod1+Ctrl+t exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Source Code Pro 12'
 
 # kill focused window
 bindsym $mod+q kill
@@ -106,7 +106,7 @@ bindsym $mod+Shift+r restart
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        font pango: Noto Sans Regular 10
+        font pango: Noto Sans Regular 12
         status_command i3status
 }
 
