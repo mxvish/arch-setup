@@ -74,7 +74,6 @@ PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W \# $'
 
 feh --bg-max ~/arch_outline.png
-xrdb ~/.Xresources
 xmodmap ~/.Xmodmap
 xrandr --output eDP-1 --brightness 0.5
 xrandr --output HDMI-1 --auto --left-of eDP-1
