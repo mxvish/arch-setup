@@ -2,8 +2,6 @@ mv config  .config/i3/
 sudo mv i3status.conf /etc/
 mv vimrc ~/.vimrc
 
-#make display scale larger
-mv Xresources ~/.Xresources
 :'
 pacman -Syu --needed --noconfirm base-devel
 git clone https://aur.archlinux.org/yay-bin.git
