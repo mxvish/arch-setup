@@ -84,4 +84,7 @@ rm archinstall.sh archsetup.sh LICENSE README.md
 
 xbacklight -set 20
 
+mkdir -p /usr/local/share/kbd/keymaps/
+echo 'keycode 58 = Control' > /usr/local/share/kbd/keymaps/custom.map
+
 reboot
