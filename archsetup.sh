@@ -13,7 +13,6 @@ NameResolvingService=systemd' > /etc/iwd/main.conf
 
 packages=(
 	acpilight
-	alsa-utils
 	bash-completion
  	bluez
   	bluez-utils 
