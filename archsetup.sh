@@ -1,6 +1,3 @@
-#enable wifi on startup
-systemctl enable netctl-auto@wlan0.service
-
 #setup for wifi
 systemctl enable iwd.service
 systemctl start iwd.service
