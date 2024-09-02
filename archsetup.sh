@@ -64,12 +64,9 @@ exec i3' > .xinitrc
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
 
 mv bashrc .bashrc
-mv grub /etc/default/
 
 mkdir /mnt/mx /mnt/usb
-#mount /dev/nvme0n1p3 /mnt/mx for slackware?
 grub-mkconfig -o /boot/grub/grub.cfg
-#edit /boot/grub/grub.cfg like grub.cfg in this repo?
 
 echo 'Section "InputClass"
      Identifier "libinput touchpad catchall"
@@ -81,8 +78,6 @@ echo 'Section "InputClass"
 EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
 
 rm archinstall.sh archsetup.sh LICENSE README.md
-
-xbacklight -set 20
 
 mkdir -p /usr/local/share/kbd/keymaps/
 echo 'keycode 58 = Control' > /usr/local/share/kbd/keymaps/custom.map
