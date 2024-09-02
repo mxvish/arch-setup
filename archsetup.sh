@@ -60,11 +60,6 @@ fi' >> .bash_profile
 echo 'xrdb ~/.Xresources
 exec i3' > .xinitrc
 
-echo 'clear lock
-clear control
-keycode 66 = Control_L
-add control = Control_L Control_R' > .Xmodmap
-
 #for xampp
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
 
