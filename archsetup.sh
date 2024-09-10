@@ -65,8 +65,7 @@ exec i3' > .xinitrc
 
 mv bashrc .bashrc
 
-mkdir /mnt/mx /mnt/usb
-grub-mkconfig -o /boot/grub/grub.cfg
+mkdir /mnt/usb
 
 echo 'Section "InputClass"
      Identifier "libinput touchpad catchall"
