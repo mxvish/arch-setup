@@ -29,7 +29,6 @@ packages=(
 	i3status
 	make
 	man
-	neofetch
 	otf-ipafont
 	polkit
  	pulseaudio
@@ -39,7 +38,6 @@ packages=(
  	scrot
 	sudo
 	unzip
-	vivaldi
 	wget
 	xclip
 	xfce4-terminal
@@ -50,8 +48,8 @@ packages=(
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
 
-systemctl enable bluetooth.service
-systemctl start bluetooth.service
+#systemctl enable bluetooth.service
+#systemctl start bluetooth.service
 
 echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
