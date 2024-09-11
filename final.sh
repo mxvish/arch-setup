@@ -13,14 +13,6 @@ yay -S --noconfirm brave-bin
 
 wget https://raw.githubusercontent.com/mxvish/GUI-timer/main/cd.java
 
-amixer set Master unmute
-amixer set Speaker unmute
-amixer set Headphone unmute
-
-amixer set Master 40
-amixer set Speaker 87
-amixer set Headphone 87
-
 reboot
 :'
 su
