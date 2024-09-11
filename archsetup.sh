@@ -59,6 +59,11 @@ fi' >> /home/$USER/.bash_profile
 
 echo 'exec i3' > /home/$USER/.xinitrc
 
+echo 'clear lock
+clear control
+keycode 66 = Control_L
+add control = Control_L Control_R' > /home/$USER/.Xmodmap
+
 #for xampp
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
 
