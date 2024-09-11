@@ -2,16 +2,14 @@ mv config  .config/i3/
 sudo mv i3status.conf /etc/
 mv vimrc ~/.vimrc
 
-:'
 pacman -Syu --needed --noconfirm base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 sudo chown $(whoami):$(whoami) yay-bin
 cd yay-bin
 makepkg -si --noconfirm
 yay -S --noconfirm brave-bin
-'
 
-wget https://raw.githubusercontent.com/mxvish/GUI-timer/main/cd.java
+#wget https://raw.githubusercontent.com/mxvish/GUI-timer/main/cd.java
 
 reboot
 :'
