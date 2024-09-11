@@ -53,14 +53,14 @@ for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
 
 echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
-fi' >> .bash_profile
+fi' >> /home/$USER/.bash_profile
 
-echo 'exec i3' > .xinitrc
+echo 'exec i3' > /home/$USER/.xinitrc
 
 #for xampp
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
 
-mv bashrc .bashrc
+mv bashrc /home/$USER/.bashrc
 
 mkdir /mnt/usb
 
@@ -73,7 +73,7 @@ echo 'Section "InputClass"
      Driver "libinput"
 EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
 
-rm archinstall.sh archsetup.sh LICENSE README.md
+#rm archinstall.sh archsetup.sh LICENSE README.md
 
 mkdir -p /usr/local/share/kbd/keymaps/
 echo 'keycode 58 = Control' > /usr/local/share/kbd/keymaps/custom.map
