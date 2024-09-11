@@ -28,7 +28,6 @@ function aw {
 }
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias dh='df -h'
-alias e='emacs'
 alias f='free -m'
 function i {
     url="https://duckduckgo.com/?q=wiki+"
@@ -67,7 +66,6 @@ alias vc='vim ~/.config/i3/config'
 alias vv='vim ~/.vimrc'
 alias x='xdg-open'
 alias xe='xrandr --output eDP-1 --brightness'
-alias xm='xmodmap ~/.Xmodmap'
 alias xc='xclip -sel c <'
 
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
