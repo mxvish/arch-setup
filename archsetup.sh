@@ -57,8 +57,7 @@ echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
 fi' >> .bash_profile
 
-echo 'xrdb ~/.Xresources
-exec i3' > .xinitrc
+echo 'exec i3' > .xinitrc
 
 #for xampp
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
