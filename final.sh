@@ -1,6 +1,6 @@
-mv config  .config/i3/
-sudo mv i3status.conf /etc/
-mv vimrc ~/.vimrc
+mv config  /home/$USER/.config/i3/
+mv i3status.conf /etc/
+mv vimrc /home/$USER/.vimrc
 
 pacman -Syu --needed --noconfirm base-devel
 git clone https://aur.archlinux.org/yay-bin.git
