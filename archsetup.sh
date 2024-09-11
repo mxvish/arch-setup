@@ -1,4 +1,6 @@
 #setup for wifi
+systemctl enable dhcpcd.service
+systemctl start dhcpcd.service
 systemctl enable iwd.service
 systemctl start iwd.service
 systemctl enable systemd-resolved.service
