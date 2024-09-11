@@ -10,9 +10,6 @@ cd yay-bin
 makepkg -si --noconfirm
 yay -S --noconfirm brave-bin
 '
-wget https://raw.githubusercontent.com/mxvish/init.el/main/init.el
-mkdir ~/.emacs.d/
-mv init.el ~/.emacs.d/
 
 wget https://raw.githubusercontent.com/mxvish/GUI-timer/main/cd.java
 
