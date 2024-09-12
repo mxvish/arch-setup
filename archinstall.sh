@@ -1,22 +1,18 @@
 #fdisk -l
 #cfdisk /dev/nvme0n1 #if SSD or HDD is /dev/nvme0n1
 
-#(create / and swap partition(type=linux swap) and remenber device name)
+#(create / partition(type=linux) and remenber device name)
 #(for example)
 #
 #root partition:  /dev/nvme0n1p5
-#swap partition: /dev/nvme0n1p6
 #efi system: /dev/nvme0n1p1
 #
 
 #Format & mount partitions
 #mkfs.ext4 /dev/nvme0n1p5
 #mount /dev/nvme0n1p5 /mnt
-#mkswap /dev/nvme0n1p6
-#swapon /dev/nvme0n1p6
 #mkdir /mnt/efi
 #mount /dev/nvme0n1p1 /mnt/efi
-#mount -o remount,size=1G /run/archiso/cowspace
 
 #iwctl
 #station wlan0 get-networks
