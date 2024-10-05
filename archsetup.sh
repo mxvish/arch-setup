@@ -54,9 +54,6 @@ packages=(
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
 
-#systemctl enable bluetooth.service
-#systemctl start bluetooth.service
-
 echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
 fi' >> /home/$USER/.bash_profile
