@@ -12,6 +12,8 @@ yay -S --noconfirm brave-bin
 
 #wget https://raw.githubusercontent.com/mxvish/GUI-timer/main/cd.java
 
+pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
 reboot
 :'
 su
