@@ -19,7 +19,7 @@ NameResolvingService=systemd' > /etc/iwd/main.conf
 packages=(
 	acpilight
 	bash-completion
- 	blueman
+ 	blueberry
  	bluez
   	bluez-utils 
 	dmenu
