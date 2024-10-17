@@ -69,7 +69,7 @@ add control = Control_L Control_R' > /home/$USER/.Xmodmap
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
 
 mv bashrc /home/$USER/.bashrc
-chown $USER:$USER .bashrc
+chown $USER:$USER /home/$USER/.bashrc
  
 mkdir /mnt/usb
 
