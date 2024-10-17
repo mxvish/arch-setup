@@ -1,4 +1,5 @@
 mv config  /home/$USER/.config/i3/
+chown $USER:$USER /home/$USER/.config/i3/config
 wget -q https://raw.githubusercontent.com/mxvish/i3status/main/i3status.conf
 mv i3status.conf /etc/
 mv vimrc /home/$USER/.vimrc
