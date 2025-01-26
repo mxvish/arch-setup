@@ -118,12 +118,12 @@ bindsym $mod+a exec brave amazon.co.jp
 bindsym $mod+b exec brave
 bindsym $mod+Shift+b exec brave "https://fes.rakuten-bank.co.jp/MS/main/RbS?CurrentPageID=START&&COMMAND=LOGIN"
 bindsym $mod+Ctrl+b exec brave http://mubou.seesaa.net
-bindsym $mod+c exec java ~/cd.java
+bindsym $mod+c exec brave chatgpt.com
 bindsym $mod+Shift+c exec brave docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
-bindsym $mod+Ctrl+c exec brave chatgpt.com
+bindsym $mod+Ctrl+c exec java ~/cd.java
 bindsym $mod+Shift+d exec brave deepl.com
 bindsym $mod+e exec brave keybr.com
-bindsym $mod+Ctrl+e exec brave keep.google.com
+bindsym $mod+Shift+e exec brave keep.google.com
 bindsym $mod+g exec brave gakujo.shizuoka.ac.jp
 bindsym $mod+Shift+g exec brave github.com/mxvish/?tab=repositories
 bindsym $mod+Ctrl+g exec brave scholar.google.com
@@ -138,7 +138,7 @@ bindsym $mod+n exec brave amplenote.com/notes
 bindsym $mod+o exec brave onedrive.live.com
 bindsym $mod+Shift+o exec brave outlook.office.com
 bindsym $mod+p exec brave pubmed.ncbi.nlm.nih.gov
-bindsym $mod+r exec brave https://drive.google.com/drive/my-drive
+bindsym $mod+r exec brave https://drive.google.com/drive/recent
 bindsym $mod+Ctrl+r exec systemctl reboot -i
 bindsym $mod+s exec brave https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
 bindsym $mod+Shift+s exec brave https://ib.surugabank.co.jp/im/IBGate
@@ -149,7 +149,6 @@ bindsym $mod+Ctrl+t exec brave translate.google.com
 bindsym $mod+u exec brave https://opac.lib.shizuoka.ac.jp/simple/
 bindsym $mod+v exec brave docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
 bindsym $mod+Shift+v exec brave vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
-bindsym $mod+w exec brave google.com/search?q=weather
 bindsym $mod+x exec i3lock -c 000000
 bindsym $mod+y exec brave https://youtube.com/feed/playlists
 
