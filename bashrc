@@ -87,7 +87,7 @@ alias xe='xrandr --output eDP-1 --brightness'
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W $'
 
-#feh --bg-max ~/wallpaper.png
+#feh --bg-center ~/wallpaper.jpg
 xbacklight -set 20
 xmodmap .Xmodmap
 xrandr --output eDP-1 --brightness 0.3
