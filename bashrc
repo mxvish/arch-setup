@@ -90,6 +90,6 @@ PS1='\W $'
 #feh --bg-center ~/wallpaper.jpg
 xbacklight -set 20
 xmodmap .Xmodmap
-xrandr --output eDP-1 --brightness 0.3
+xrandr --output eDP-1 --brightness 0.4
 xrandr --output HDMI-1 --auto --left-of eDP-1
-xrandr --output HDMI-1 --rotate left
+#xrandr --output HDMI-1 --rotate left
