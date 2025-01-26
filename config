@@ -151,5 +151,6 @@ bindsym $mod+v exec brave docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH3
 bindsym $mod+Shift+v exec brave vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
 bindsym $mod+x exec i3lock -c 000000
 bindsym $mod+y exec brave https://youtube.com/feed/playlists
+bindsym $mod+Shift+y exec blueberry
 
 bindsym Print exec scrot
