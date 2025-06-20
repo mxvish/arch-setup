@@ -9,7 +9,7 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
   genfstab -U /mnt >> /mnt/etc/fstab
   arch-chroot /mnt
   git clone https://github.com/mxvish/arch-setup.git
-  mv arch-setup/* .
+  cd arch-setup
   sh archinstall.sh
   exit
   reboot
