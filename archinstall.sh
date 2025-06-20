@@ -12,6 +12,8 @@
 #mkfs.ext4 /dev/nvme0n1p5
 #mount /dev/nvme0n1p5 /mnt
 #mkdir /mnt/efi
+## if command below doesn't work
+## mkfs.vfat -F32 /dev/nvme0n1p1
 #mount /dev/nvme0n1p1 /mnt/efi
 
 #iwctl
