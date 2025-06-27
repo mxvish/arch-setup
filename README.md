@@ -10,13 +10,13 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
   arch-chroot /mnt
   git clone https://github.com/mxvish/arch-setup.git
   cd arch-setup
-  sh archinstall.sh
+  sh install.sh
   exit
   reboot
   ```
   - Change username from `mxvish` as you like.
   - This script does not format, mount partitions, and connect to wifi automatically.
-  Refer to commented out commands in [archinstall.sh](archinstall.sh) to do them.
+  Refer to commented out commands in [install.sh](install.sh) to do them.
 
 - Install i3 and others
   ```sh
