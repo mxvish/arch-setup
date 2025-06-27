@@ -21,7 +21,7 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
 - Install i3 and others
   ```sh
   su
-  sh archsetup.sh
+  sh setup.sh
   sh final.sh
   ```
   - For more information about what this command does, see [setup.sh](setup.sh) and [final.sh](final.sh).
