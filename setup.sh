@@ -6,9 +6,6 @@ systemctl start iwd.service
 systemctl enable systemd-resolved.service
 systemctl start systemd-resolved.service
 
-systemctl enable bluetooth.service 
-systemctl start bluetooth.service 
-
 echo '
 [General]
 EnableNetworkConfiguration=true
