@@ -1,3 +1,6 @@
+systemctl enable bluetooth.service 
+systemctl start bluetooth.service 
+
 mv config  /home/$USER/.config/i3/
 chown $USER:$USER /home/$USER/.config/i3/config
 
