@@ -19,6 +19,8 @@ yay -S --noconfirm brave-bin
 
 pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
+sed -i  's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
+
 reboot
 :'
 su
