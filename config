@@ -114,43 +114,43 @@ bar {
 
 exec --no-startup-id fcitx -d
 
-bindsym $mod+a exec brave amazon.co.jp
-bindsym $mod+b exec brave
-bindsym $mod+Shift+b exec brave "https://fes.rakuten-bank.co.jp/MS/main/RbS?CurrentPageID=START&&COMMAND=LOGIN"
-bindsym $mod+Ctrl+b exec brave http://mubou.seesaa.net
-bindsym $mod+c exec brave chatgpt.com
-bindsym $mod+Shift+c exec brave docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
+bindsym $mod+a exec firefox amazon.co.jp
+bindsym $mod+b exec firefox
+bindsym $mod+Shift+b exec firefox "https://fes.rakuten-bank.co.jp/MS/main/RbS?CurrentPageID=START&&COMMAND=LOGIN"
+bindsym $mod+Ctrl+b exec firefox http://mubou.seesaa.net
+bindsym $mod+c exec firefox chatgpt.com
+bindsym $mod+Shift+c exec firefox docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
 bindsym $mod+Ctrl+c exec java ~/cd.java
-bindsym $mod+Shift+d exec brave deepl.com
-bindsym $mod+e exec brave keybr.com
-bindsym $mod+Shift+e exec brave keep.google.com
-bindsym $mod+g exec brave gakujo.shizuoka.ac.jp
-bindsym $mod+Shift+g exec brave github.com/mxvish/?tab=repositories
-bindsym $mod+Ctrl+g exec brave scholar.google.com
-bindsym $mod+Shift+h exec brave https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
-bindsym $mod+i exec brave discord.com/channels/@me
-bindsym $mod+j exec brave shonenjumpplus.com
-bindsym $mod+Shift+k exec brave https://www.kyorindo-netsuper.jp
-bindsym $mod+Shift+l exec brave https://linkedin.com/in/koshima
-bindsym $mod+m exec brave mail.google.com/mail/u/0/
-bindsym $mod+Shift+m exec brave google.com/maps
-bindsym $mod+n exec brave amplenote.com/notes
-bindsym $mod+o exec brave onedrive.live.com
-bindsym $mod+Shift+o exec brave outlook.office.com
-bindsym $mod+p exec brave pubmed.ncbi.nlm.nih.gov
-bindsym $mod+r exec brave https://drive.google.com/drive/recent
+bindsym $mod+Shift+d exec firefox deepl.com
+bindsym $mod+e exec firefox keybr.com
+bindsym $mod+Shift+e exec firefox keep.google.com
+bindsym $mod+g exec firefox gakujo.shizuoka.ac.jp
+bindsym $mod+Shift+g exec firefox github.com/mxvish/?tab=repositories
+bindsym $mod+Ctrl+g exec firefox scholar.google.com
+bindsym $mod+Shift+h exec firefox https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
+bindsym $mod+i exec firefox discord.com/channels/@me
+bindsym $mod+j exec firefox shonenjumpplus.com
+bindsym $mod+Shift+k exec firefox https://www.kyorindo-netsuper.jp
+bindsym $mod+Shift+l exec firefox https://linkedin.com/in/koshima
+bindsym $mod+m exec firefox mail.google.com/mail/u/0/
+bindsym $mod+Shift+m exec firefox google.com/maps
+bindsym $mod+n exec firefox amplenote.com/notes
+bindsym $mod+o exec firefox onedrive.live.com
+bindsym $mod+Shift+o exec firefox outlook.office.com
+bindsym $mod+p exec firefox pubmed.ncbi.nlm.nih.gov
+bindsym $mod+r exec firefox https://drive.google.com/drive/recent
 bindsym $mod+Ctrl+r exec systemctl reboot -i
-bindsym $mod+s exec brave https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
-bindsym $mod+Shift+s exec brave https://ib.surugabank.co.jp/im/IBGate
-bindsym $mod+Ctrl+s exec brave app.slack.com/client
-bindsym $mod+t exec brave https://todoist.com/app
-bindsym $mod+Shift+t exec brave https://teams.microsoft.com
-bindsym $mod+Ctrl+t exec brave translate.google.com
-bindsym $mod+u exec brave https://opac.lib.shizuoka.ac.jp/simple/
-bindsym $mod+v exec brave docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
-bindsym $mod+Shift+v exec brave vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
+bindsym $mod+s exec firefox https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
+bindsym $mod+Shift+s exec firefox https://ib.surugabank.co.jp/im/IBGate
+bindsym $mod+Ctrl+s exec firefox app.slack.com/client
+bindsym $mod+t exec firefox https://todoist.com/app
+bindsym $mod+Shift+t exec firefox https://teams.microsoft.com
+bindsym $mod+Ctrl+t exec firefox translate.google.com
+bindsym $mod+u exec firefox https://opac.lib.shizuoka.ac.jp/simple/
+bindsym $mod+v exec firefox docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
+bindsym $mod+Shift+v exec firefox vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
 bindsym $mod+x exec i3lock -c 000000
-bindsym $mod+y exec brave https://youtube.com/feed/playlists
+bindsym $mod+y exec firefox https://youtube.com/feed/playlists
 bindsym $mod+Shift+y exec blueberry
 
 bindsym Print exec scrot
