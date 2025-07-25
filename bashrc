@@ -25,7 +25,7 @@ function aw {
 	for arg in $@; do
 		url+="$arg+"
 	done
-    brave $url
+    firefox $url
 }
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias dh='df -h'
@@ -35,25 +35,25 @@ function gw {
 	for arg in $@; do
 		url+="$arg+"
 	done
-    brave $url
+    firefox $url
 }
 function i {
     url="https://duckduckgo.com/?q=wiki+"
 	for arg in $@; do
 		url+="$arg+"
 	done
-    brave $url
+    firefox $url
 }
 function ii {
 	url="https://duckduckgo.com/?q=wiki+"
 	for arg in $@; do
 		url+="$arg+"
 	done
-	brave $url
+	firefox $url
 	url+="+pixiv"
-	brave $url
+	firefox $url
 	url=`echo "$url" | sed 's/pixiv/dic.nicovideo/'`
-	brave $url
+	firefox $url
 }
 alias li='clisp'
 alias ls='ls --color=auto'
@@ -69,7 +69,7 @@ function sc {
 	for arg in $@; do
 		url+="$arg+"
 	done
-    brave $url
+    firefox $url
 }
 alias si='yay -Sc --noconfirm; yay -Syu --noconfirm; sudo pacman -Sc --noconfirm; sudo pacman -Syu --noconfirm'
 alias sr='sudo pacman -Qdtq | sudo pacman -Rs - --noconfirm; sudo pacman -R --noconfirm'
