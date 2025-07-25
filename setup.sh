@@ -28,6 +28,7 @@ packages=(
 	fcitx-configtool
 	fcitx-mozc
 	feh
+ 	firefox
  	gcc
 	git
 	i3-wm
