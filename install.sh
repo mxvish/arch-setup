@@ -18,6 +18,10 @@
 ## mkfs.vfat -F32 /dev/nvme0n1p1
 #mount /dev/nvme0n1p1 /mnt/efi
 
+#when wlan is disabled
+#rfkill unblock wlan
+#ip link set wlan0 up
+
 #iwctl
 #station wlan0 get-networks
 #station wlan0 connect aterm*g
