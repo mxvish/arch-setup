@@ -1,3 +1,5 @@
+#rmmid pcspkr # disable to beep on error
+
 #fdisk -l
 #cfdisk /dev/nvme0n1 #if SSD or HDD is /dev/nvme0n1
 
