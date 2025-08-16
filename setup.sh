@@ -33,11 +33,13 @@ packages=(
 	i3status
 	make
 	man
+ 	nasm
 	otf-ipafont
 	polkit
  	pulseaudio
  	pulseaudio-bluetooth
-  	r
+  	qemu-desktop
+   	r
 	ranger
  	scrot
 	sudo
