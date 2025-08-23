@@ -20,6 +20,7 @@ packages=(
  	bluez
   	bluez-utils 
 	dmenu
+ 	emacs-nox
  	exfatprogs
 	fcitx
 	fcitx-configtool
@@ -43,6 +44,7 @@ packages=(
 	ranger
  	scrot
 	sudo
+ 	tree
 	unzip
 	wget
 	xclip
