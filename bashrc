@@ -98,7 +98,7 @@ PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W $'
 
 #feh --bg-center ~/wallpaper.jpg
-xbacklight -set 20
+#xbacklight -set 20
 xmodmap .Xmodmap
 xrandr --output eDP-1 --brightness 0.4
 xrandr --output HDMI-1 --auto --left-of eDP-1
