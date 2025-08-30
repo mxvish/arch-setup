@@ -29,12 +29,22 @@ function aw {
 }
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias dh='df -h'
+alias e='emacs'
+alias ew='emacs -f eww'
 alias f='free -m'
 function gw {
     local url="https://duckduckgo.com/?q=gentoo+wiki+"
 	for arg in $@; do
 		url+="$arg+"
 	done
+    firefox $url
+}
+function h {
+    url="https://hands.net/search/?q="
+	for arg in $@; do
+		url+="$arg+"
+	done
+	url+="&rankBy=score%3Adescending"
     firefox $url
 }
 function i {
