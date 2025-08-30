@@ -64,5 +64,8 @@ brave
     check
         system
             memory saver
-                
+firefox
+    fonts -> fonts for latin
+        serif      : FreeSerif
+        sans-serif : FreeSans
 '
