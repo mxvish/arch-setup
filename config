@@ -49,8 +49,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Source Code Pro 13'
-bindsym Mod1+Ctrl+t exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Source Code Pro 13'
+bindsym $mod+Return exec lxterminal
+bindsym Mod1+Ctrl+t exec lxterminal
 
 # kill focused window
 bindsym $mod+q kill
