@@ -15,6 +15,10 @@ pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 sed -i  's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
+sed -i 's/Monospace 10/Monospace 12/' .config/lxterminal/lxterminal.conf
+sed -i 's/hidemenubar=false/hidemenubar=true/' .config/lxterminal/lxterminal.conf
+sed -i 's/hidescrollbar=false/hidescrollbar=true/' .config/lxterminal/lxterminal.conf
+
 reboot
 :'
 su
