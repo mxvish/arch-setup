@@ -32,6 +32,7 @@ packages=(
 	i3-wm
 	i3lock
 	i3status
+ 	lxterminal
 	make
 	man
  	nasm
@@ -48,7 +49,6 @@ packages=(
 	unzip
 	wget
 	xclip
-	xfce4-terminal
 	xorg-server
 	xorg-xinit
 	xorg-xrandr
