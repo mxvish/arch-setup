@@ -13,6 +13,11 @@ wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/.vimrc
 mv .vimrc /home/$CURRENT_USER/.vimrc
 chown $CURRENT_USER:$CURRENT_USER /home/$CURRENT_USER/.vimrc
 
+wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/init.el
+mkdir -p /home/$CURRENT_USER/.emacs.d/
+mv init.el /home/$CURRENT_USER/.emacs.d/
+chown $CURRENT_USER:$CURRENT_USER  /home/$CURRENT_USER/.emacs.d/
+
 pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 sed -i  's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
