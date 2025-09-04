@@ -57,20 +57,20 @@ for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
 
 echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 \texec startx
-fi' >> /home/$USER/.bash_profile
+fi' >> /home/$HOSTNAME/.bash_profile
 
-echo 'exec i3' > /home/$USER/.xinitrc
+echo 'exec i3' > /home/$HOSTNAME/.xinitrc
 
 echo 'clear lock
 clear control
 keycode 66 = Control_L
-add control = Control_L Control_R' > /home/$USER/.Xmodmap
+add control = Control_L Control_R' > /home/$HOSTNAME/.Xmodmap
 
 #for xampp
 #pacman -Syu --noconfirm inetutils libxcrypt-compat
 
-mv bashrc /home/$USER/.bashrc
-chown $USER:$USER /home/$USER/.bashrc
+mv bashrc /home/$HOSTNAME/.bashrc
+chown $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.bashrc
  
 mkdir /mnt/usb
 
