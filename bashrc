@@ -31,7 +31,13 @@ alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias dh='df -h'
 alias e='emacs'
 alias ew='emacs -f eww'
-alias f='free -m'
+function f {
+  local url="https://duckduckgo.com/?q=freebsd+wiki+"
+	for arg in $@; do
+		url+="$arg+"
+	done
+    firefox $url
+}
 function gw {
     local url="https://duckduckgo.com/?q=gentoo+wiki+"
 	for arg in $@; do
@@ -65,6 +71,7 @@ function ii {
 	url=`echo "$url" | sed 's/pixiv/dic.nicovideo/'`
 	firefox $url
 }
+alias le='less'
 alias li='clisp'
 alias ls='ls --color=auto'
 alias md='sudo mount /dev/sda2 /mnt/usb'
