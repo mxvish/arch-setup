@@ -1,7 +1,7 @@
 systemctl enable bluetooth.service 
 systemctl start bluetooth.service 
 
-乃木坂46 (Nogizaka46) - 口約束 乃木坂46 (Nogizaka46) - 口約束 乃木坂46 (Nogizaka46) - 口約束 git clone https://github.com/mxvish/i3config.git
+git clone https://github.com/mxvish/i3config.git
 cd i3config
 mv config ~/.config/i3/
 chown $USER:$USER /home/$USER/.config/i3/config
