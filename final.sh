@@ -1,15 +1,17 @@
+CURRENT_USER="mxvish"
+
 systemctl enable bluetooth.service 
 systemctl start bluetooth.service 
 
 git clone https://github.com/mxvish/i3config.git
 cd i3config
-mv config ~/.config/i3/
-chown $USER:$USER /home/$USER/.config/i3/config
+mv config /home/$CURRENT_USER/.config/i3/
+chown $CURRENT_USER:$CURRENT_USER /home/$CURRENT_USER/.config/i3/config
 sudo mv i3status.conf /etc/
 
 wget -q https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc
-mv vimrc /home/$USER/.vimrc
-chown $USER:$USER /home/$USER/.vimrc
+mv vimrc /home/$CURRENT_USER/.vimrc
+chown $CURRENT_USER:$CURRENT_USER /home/$CURRENT_USER/.vimrc
 
 pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
@@ -73,3 +75,4 @@ firefox
         serif      : FreeSerif
         sans-serif : FreeSans
 '
+
