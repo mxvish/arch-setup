@@ -66,9 +66,6 @@ clear control
 keycode 66 = Control_L
 add control = Control_L Control_R' > /home/$HOSTNAME/.Xmodmap
 
-#for xampp
-#pacman -Syu --noconfirm inetutils libxcrypt-compat
-
 mv bashrc /home/$HOSTNAME/.bashrc
 chown $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.bashrc
  
