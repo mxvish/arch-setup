@@ -9,8 +9,8 @@ mv config /home/$CURRENT_USER/.config/i3/
 chown $CURRENT_USER:$CURRENT_USER /home/$CURRENT_USER/.config/i3/config
 sudo mv i3status.conf /etc/
 
-wget -q https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc
-mv vimrc /home/$CURRENT_USER/.vimrc
+wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/.vimrc
+mv .vimrc /home/$CURRENT_USER/.vimrc
 chown $CURRENT_USER:$CURRENT_USER /home/$CURRENT_USER/.vimrc
 
 pactl set-source-mute @DEFAULT_SOURCE@ toggle
