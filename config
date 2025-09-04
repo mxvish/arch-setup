@@ -140,6 +140,7 @@ bindsym $mod+Shift+o exec firefox outlook.office.com
 bindsym $mod+p exec firefox pubmed.ncbi.nlm.nih.gov
 bindsym $mod+r exec firefox https://drive.google.com/drive/recent
 bindsym $mod+Ctrl+r exec firefox https://tver.jp/mypage/fav
+bindsym $mod+Shift+Ctrl+r exec firefox https://reddit.com
 bindsym $mod+s exec firefox https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
 bindsym $mod+Shift+s exec firefox https://ib.surugabank.co.jp/im/IBGate
 bindsym $mod+Ctrl+s exec firefox app.slack.com/client
