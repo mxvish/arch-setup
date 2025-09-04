@@ -118,14 +118,14 @@ bindsym $mod+a exec firefox amazon.co.jp
 bindsym $mod+b exec firefox
 bindsym $mod+Shift+b exec firefox "https://fes.rakuten-bank.co.jp/MS/main/RbS?CurrentPageID=START&&COMMAND=LOGIN"
 bindsym $mod+Ctrl+b exec firefox http://mubou.seesaa.net
-bindsym $mod+c exec firefox chatgpt.com
-bindsym $mod+Shift+c exec firefox docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
-bindsym $mod+Ctrl+c exec java ~/cd.java
+bindsym $mod+c exec firefox gemini.google.com
+bindsym $mod+Shift+c exec firefox chatgpt.com
+bindsym $mod+Ctrl+c exec firefox docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
 bindsym $mod+Shift+d exec firefox deepl.com
 bindsym $mod+e exec firefox keybr.com
 bindsym $mod+Shift+e exec firefox keep.google.com
-bindsym $mod+g exec firefox gakujo.shizuoka.ac.jp
-bindsym $mod+Shift+g exec firefox github.com/mxvish/?tab=repositories
+bindsym $mod+g exec firefox github.com/mxvish/?tab=repositories
+bindsym $mod+Shift+g exec firefox gakujo.shizuoka.ac.jp
 bindsym $mod+Ctrl+g exec firefox scholar.google.com
 bindsym $mod+Shift+h exec firefox https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
 bindsym $mod+i exec firefox discord.com/channels/@me
