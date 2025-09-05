@@ -26,10 +26,6 @@ sed -i 's/hidescrollbar=false/hidescrollbar=true/' .config/lxterminal/lxterminal
 
 reboot
 :'
-su
-EDITOR=vim visudo
-#uncomment line that begins with # %wheel
-
 fcitx
     fcitx-config-gtk3
         input method
