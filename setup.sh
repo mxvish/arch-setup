@@ -17,7 +17,8 @@ packages=(
 	bash-completion
  	blueberry
  	bluez
-  	bluez-utils 
+  	bluez-utils
+	brightnessctl
  	emacs-nox
  	exfatprogs
 	fcitx
