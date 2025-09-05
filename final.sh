@@ -3,14 +3,12 @@ systemctl start bluetooth.service
 
 mkdir -p /home/$HOSTNAME/.config/sway
 cp /etc/sway/config /home/$HOSTNAME/.config/sway
-chown $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.config/sway/config
 
 sed -i 's/foot/lxterminal/' /home/$HOSTNAME/.config/sway/config
 
 git clone https://github.com/mxvish/i3config.git
 cd i3config
 mv config /home/$HOSTNAME/.config/i3/
-chown $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.config/i3/config
 sudo mv i3status.conf /etc/
 
 wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/.vimrc
@@ -21,6 +19,8 @@ wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/init.el
 mkdir -p /home/$HOSTNAME/.emacs.d/
 mv init.el /home/$HOSTNAME/.emacs.d/
 chown $HOSTNAME:$HOSTNAME  /home/$HOSTNAME/.emacs.d/
+
+chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.config/
 
 pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
