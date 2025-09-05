@@ -1,6 +1,12 @@
 systemctl enable bluetooth.service 
 systemctl start bluetooth.service 
 
+mkdir -p /home/$HOSTNAME/.config/sway
+cp /etc/sway/config /home/$HOSTNAME/.config/sway
+chown $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.config/sway/config
+
+sed -i '' 's/foot/lxterminal/' /home/$HOSTNAME/.config/sway/config
+
 git clone https://github.com/mxvish/i3config.git
 cd i3config
 mv config /home/$HOSTNAME/.config/i3/
