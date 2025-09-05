@@ -27,6 +27,7 @@ packages=(
  	firefox
  	gcc
 	git
+ 	i3status
  	lxterminal
 	make
 	man
