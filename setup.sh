@@ -18,7 +18,6 @@ packages=(
  	blueberry
  	bluez
   	bluez-utils 
-	dmenu
  	emacs-nox
  	exfatprogs
 	fcitx
@@ -28,9 +27,6 @@ packages=(
  	firefox
  	gcc
 	git
-	i3-wm
-	i3lock
-	i3status
  	lxterminal
 	make
 	man
@@ -44,14 +40,14 @@ packages=(
 	ranger
  	scrot
 	sudo
+ 	sway
+ 	swaylock
  	tree
 	unzip
 	wget
+ 	wmenu
 	xclip
-	xorg-server
-	xorg-xinit
-	xorg-xrandr
-	xterm)
+ )
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
 
