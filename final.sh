@@ -13,14 +13,12 @@ sudo mv i3status.conf /etc/
 
 wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/.vimrc
 mv .vimrc /home/$HOSTNAME/.vimrc
-chown $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.vimrc
 
 wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/init.el
 mkdir -p /home/$HOSTNAME/.emacs.d/
 mv init.el /home/$HOSTNAME/.emacs.d/
-chown $HOSTNAME:$HOSTNAME  /home/$HOSTNAME/.emacs.d/
 
-chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.config/
+chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
 
 pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
