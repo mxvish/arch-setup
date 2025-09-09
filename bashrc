@@ -13,13 +13,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#alias 0='xrandr --output eDP-1 --brightness 0.04'
-#alias 1='xrandr --output eDP-1 --brightness 0.07'
-#alias 2='xrandr --output eDP-1 --brightness 0.15'
-#alias 3='xrandr --output eDP-1 --brightness 0.3'
-#alias 10='xrandr --output eDP-1 --brightness 1'
-alias 1='xbacklight -set 1;xrandr --output eDP-1 --brightness 0.15'
-alias 5='xrandr --output eDP-1 --brightness 0.5'
 function aw {
     local url="https://duckduckgo.com/?q=arch+wiki+"
 	for arg in $@; do
