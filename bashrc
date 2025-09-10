@@ -92,13 +92,8 @@ alias vc='vim ~/.config/i3/config'
 alias vv='vim ~/.vimrc'
 alias x='xdg-open'
 alias xc='xclip -sel c <'
-alias xe='xrandr --output eDP-1 --brightness'
 
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W $'
 
 #feh --bg-center ~/wallpaper.jpg
-#xbacklight -set 20
-xrandr --output eDP-1 --brightness 0.4
-xrandr --output HDMI-1 --auto --left-of eDP-1
-#xrandr --output HDMI-1 --rotate left
