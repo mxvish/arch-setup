@@ -91,7 +91,9 @@ alias vb='v ~/b; xc b'
 alias vc='vim ~/.config/i3/config'
 alias vv='vim ~/.vimrc'
 alias x='xdg-open'
-alias xc='xclip -sel c <'
+xc() {
+    cat "$@" | wl-copy
+}
 
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W $'
