@@ -8,7 +8,7 @@ sed -i 's/foot/lxterminal/' /home/$HOSTNAME/.config/sway/config
 
 git clone https://github.com/mxvish/i3config.git
 cd i3config
-mv config /home/$HOSTNAME/.config/i3/
+mv config /home/$HOSTNAME/.config/sway/
 sudo mv i3status.conf /etc/
 
 wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/.vimrc
