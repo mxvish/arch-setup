@@ -48,7 +48,7 @@ packages=(
 	unzip
 	wget
  	wmenu
-	xclip
+	wl-clipboard
  	xorg-server
  )
 
