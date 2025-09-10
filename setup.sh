@@ -76,7 +76,4 @@ EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
 
 #rm archinstall.sh archsetup.sh LICENSE README.md
 
-mkdir -p /usr/local/share/kbd/keymaps/
-echo 'keycode 58 = Control' > /usr/local/share/kbd/keymaps/custom.map
-
 reboot
