@@ -19,6 +19,7 @@ packages=(
  	bluez
   	bluez-utils
 	brightnessctl
+ 	dmenu
  	emacs-nox
  	exfatprogs
 	fcitx
@@ -28,6 +29,8 @@ packages=(
  	firefox
  	gcc
 	git
+ 	i3-wm
+  	i3lock
  	i3status
  	lxterminal
 	make
@@ -50,6 +53,7 @@ packages=(
  	wmenu
 	wl-clipboard
  	xorg-server
+  	xorg-xinit
  )
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
