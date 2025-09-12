@@ -64,6 +64,11 @@ fi' >> /home/$HOSTNAME/.bash_profile
 
 echo 'exec i3' > /home/$HOSTNAME/.xinitrc
 
+echo 'clear lock
+clear control
+keycode 66 = Control_L
+add control = Control_L Control_R' > /home/$HOSTNAME/.Xmodmap
+
 mv bashrc /home/$HOSTNAME/.bashrc
 chown $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.bashrc
  
