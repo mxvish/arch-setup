@@ -23,6 +23,7 @@ function aw {
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias dh='df -h'
 alias e='emacs'
+alias ee='emacs ~/.emacs.d/init.el'
 alias ew='emacs -f eww'
 function f {
   local url="https://duckduckgo.com/?q=freebsd+wiki+"
@@ -88,7 +89,7 @@ alias ud='sudo umount /dev/sda2'
 alias v='vim'
 alias va='v ~/a; xc a'
 alias vb='v ~/b; xc b'
-alias vc='vim ~/.config/i3/config'
+alias vc='vim ~/.config/sway/config'
 alias vv='vim ~/.vimrc'
 alias x='xdg-open'
 xc() {
@@ -99,3 +100,8 @@ PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W $'
 
 #feh --bg-center ~/wallpaper.jpg
+xmodmap .Xmodmap
+xrandr --output HDMI-1 --auto --left-of eDP-1
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
