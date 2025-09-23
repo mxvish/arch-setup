@@ -18,8 +18,6 @@ wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/init.el
 mkdir -p /home/$HOSTNAME/.emacs.d/
 mv init.el /home/$HOSTNAME/.emacs.d/
 
-chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
-
 pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 sed -i  's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
