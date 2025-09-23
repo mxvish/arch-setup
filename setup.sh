@@ -20,9 +20,10 @@ packages=(
  	dmenu
  	emacs-nox
  	exfatprogs
-	fcitx
-	fcitx-configtool
-	fcitx-mozc
+	fcitx5
+	fcitx5-configtool
+	fcitx5-gtk
+	fcitx5-mozc
 	feh
  	firefox
  	gcc
