@@ -15,9 +15,6 @@ NameResolvingService=systemd' > /etc/iwd/main.conf
 packages=(
 	acpilight
 	bash-completion
- 	blueberry
- 	bluez
-  	bluez-utils
 	brightnessctl
  	dmenu
  	emacs-nox
@@ -38,8 +35,6 @@ packages=(
  	nasm
 	otf-ipafont
 	polkit
- 	pulseaudio
- 	pulseaudio-bluetooth
   	qemu-desktop
    	r
 	ranger
