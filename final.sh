@@ -35,42 +35,6 @@ fcitx
         global config
             trigger input method
       
-brave
-    appearance
-        brave colors = dark
-    new tab page = blank
-    Settings -> appearance -> customize fonts, choose FreeSans
-    Uncheck 
-        appeareance
-            show bookmarks = never
-            show bookmarks button
-            show brave news button ~
-            show autocpmplete suggestions ~
-            show tab search button
-            show sidebar button
-            page zoom = 110%
-        brave rewards
-            show brave rewards ~
-            show tip buttons ~
-        social media blocking
-            google
-        privacy and security
-            clear browsing data
-                on exit
-                    browsing
-                    download
-                    cached ~
-                    autofill form
-            site and shields ~
-                location
-                    do not allow
-                notification
-                    do not allow
-        web3
-            show brave wallet icon ~
-    check
-        system
-            memory saver
 firefox
     fonts -> fonts for latin
         serif      : FreeSerif
