@@ -59,11 +59,6 @@ for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
 
 echo 'exec i3' > /home/$HOSTNAME/.xinitrc
 
-echo 'clear lock
-clear control
-keycode 66 = Control_L
-add control = Control_L Control_R' > /home/$HOSTNAME/.Xmodmap
-
 mv bashrc /home/$HOSTNAME/.bashrc
 chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
  
