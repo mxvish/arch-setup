@@ -58,9 +58,9 @@ packages=(
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
 
-echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-\texec startx
-fi' >> /home/$HOSTNAME/.bash_profile
+#echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+#\texec startx
+#fi' >> /home/$HOSTNAME/.bash_profile
 
 echo 'exec i3' > /home/$HOSTNAME/.xinitrc
 
