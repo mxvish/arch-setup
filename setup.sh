@@ -15,6 +15,7 @@ NameResolvingService=systemd' > /etc/iwd/main.conf
 packages=(
 	acpilight
 	bash-completion
+	blueman
 	brightnessctl
  	dmenu
  	emacs-nox
@@ -34,6 +35,8 @@ packages=(
 	man
  	nasm
 	otf-ipafont
+	pipewire
+	pipewire-pulse
 	polkit
   	qemu-desktop
    	r
