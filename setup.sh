@@ -52,6 +52,7 @@ packages=(
 	wl-clipboard
  	xorg-server
   	xorg-xinit
+  	xorg-xrandr
  )
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
