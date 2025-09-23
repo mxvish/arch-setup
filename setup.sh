@@ -65,7 +65,7 @@ keycode 66 = Control_L
 add control = Control_L Control_R' > /home/$HOSTNAME/.Xmodmap
 
 mv bashrc /home/$HOSTNAME/.bashrc
-chown $HOSTNAME:$HOSTNAME /home/$HOSTNAME/.bashrc
+chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
  
 mkdir /mnt/usb
 
