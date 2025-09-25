@@ -52,11 +52,9 @@ packages=(
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
 
-#echo -e 'if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-#\texec startx
-#fi' >> /home/$HOSTNAME/.bash_profile
-
-echo 'exec i3' > /home/$HOSTNAME/.xinitrc
+echo -e 'if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
+\texec sway
+fi' >> /home/$HOSTNAME/.bash_profile
 
 mv bashrc /home/$HOSTNAME/.bashrc
 chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
