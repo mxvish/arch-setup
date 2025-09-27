@@ -32,7 +32,6 @@ packages=(
 	make
 	man
  	nasm
-	nodejs
 	npm
 	otf-ipafont
 	pipewire
