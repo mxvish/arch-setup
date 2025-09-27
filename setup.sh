@@ -48,6 +48,7 @@ packages=(
 	wget
  	wmenu
 	wl-clipboard
+	xorg-xwayland
  )
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
