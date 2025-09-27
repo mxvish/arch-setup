@@ -26,6 +26,12 @@ sed -i 's/Monospace 10/Monospace 12/' .config/lxterminal/lxterminal.conf
 sed -i 's/hidemenubar=false/hidemenubar=true/' .config/lxterminal/lxterminal.conf
 sed -i 's/hidescrollbar=false/hidescrollbar=true/' .config/lxterminal/lxterminal.conf
 
+npm install --global pnpm
+git clone https://github.com/Vencord/Vesktop
+cd Vesktop
+pnpm i
+ln -s /home/$HOSTNAME/Vesktop/dist/linux-unpacked/vesktop /usr/local/bin/vesktop
+
 reboot
 :'
 fcitx
