@@ -32,6 +32,10 @@ cd Vesktop
 pnpm i
 ln -s /home/$HOSTNAME/Vesktop/dist/linux-unpacked/vesktop /usr/local/bin/vesktop
 
+git clone --depth=1 https://github.com/github/copilot.vim.git \
+  ~/.vim/pack/github/start/copilot.vim
+#run :Copilot setup in vim
+
 reboot
 :'
 fcitx
