@@ -33,6 +33,7 @@ packages=(
 	man
  	nasm
 	npm
+	noto-fonts-emoji
 	otf-ipafont
 	pipewire
 	pipewire-pulse
