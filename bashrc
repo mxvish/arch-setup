@@ -87,7 +87,7 @@ alias sr='sudo pacman -Qdtq | sudo pacman -Rs - --noconfirm; sudo pacman -R --no
 #alias sr='sudo pacman -Rns $(pacman -Qdtq) --noconfirm;sudo pacman -R --noconfirm'
 alias ud='sudo umount /dev/sda2'
 alias v='vim'
-alias va='v ~/a; xc a'
+alias va='v ~/a.txt; xc a.txt'
 alias vb='v ~/b; xc b'
 alias vc='vim ~/.config/sway/config'
 alias vv='vim ~/.vimrc'
@@ -100,8 +100,8 @@ PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W $'
 
 #feh --bg-center ~/wallpaper.jpg
-xmodmap .Xmodmap
-xrandr --output HDMI-1 --auto --left-of eDP-1
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+
+swaymsg output HDMI-A-1 position -- -1920 0; swaymsg output eDP-1 position 0 0
