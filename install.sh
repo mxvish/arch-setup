@@ -53,5 +53,20 @@ echo 'GRUB_CMDLINE_LINUX_DEFAULT="psmouse.synaptics_intertouch=1 quiet snd-hda-i
 
 grub-mkconfig -o /boot/grub/grub.cfg
 passwd
+
+#setup for wifi
+systemctl enable dhcpcd.service
+systemctl start dhcpcd.service
+systemctl enable iwd.service
+systemctl start iwd.service
+systemctl enable systemd-resolved.service
+systemctl start systemd-resolved.service
+
+echo '[General]
+EnableNetworkConfiguration=true
+
+[Network]
+NameResolvingService=systemd' > /etc/iwd/main.conf
+
 exit
 reboot
