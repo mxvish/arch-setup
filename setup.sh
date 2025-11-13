@@ -59,7 +59,7 @@ echo -e 'if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq
 \texec sway
 fi' >> /home/$HOSTNAME/.bash_profile
 
-mv bashrc /home/$HOSTNAME/.bashrc
+mv .bashrc /home/$HOSTNAME/
 chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
  
 mkdir /mnt/usb
