@@ -22,6 +22,7 @@ mkdir -p /home/$HOSTNAME/.emacs.d/
 mv init.el /home/$HOSTNAME/.emacs.d/
 
 pactl set-source-mute @DEFAULT_SOURCE@ toggle
+pactl set-card-profile $(pactl list cards | grep " bluez_card" | cut -d " " -f 2) headset-head-unit
 
 sed -i  's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
