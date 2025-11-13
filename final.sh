@@ -30,6 +30,7 @@ npm install --global pnpm
 git clone https://github.com/Vencord/Vesktop
 cd Vesktop
 pnpm i
+pnpm package --linux pacman
 ln -s /home/$HOSTNAME/Vesktop/dist/linux-unpacked/vesktop /usr/local/bin/vesktop
 
 git clone --depth=1 https://github.com/github/copilot.vim.git \
