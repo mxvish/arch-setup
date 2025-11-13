@@ -13,6 +13,7 @@ packages=(
  	firefox
  	gcc
 	git
+	grim
  	i3status
  	lxterminal
 	make
@@ -27,7 +28,6 @@ packages=(
   	qemu-desktop
    	r
 	ranger
- 	scrot
 	sudo
  	sway
  	swaylock
