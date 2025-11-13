@@ -26,6 +26,8 @@ pactl set-card-profile $(pactl list cards | grep " bluez_card" | cut -d " " -f 2
 
 sed -i  's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
+lxterminal
+
 sed -i 's/Monospace 10/Monospace 12/' .config/lxterminal/lxterminal.conf
 sed -i 's/hidemenubar=false/hidemenubar=true/' .config/lxterminal/lxterminal.conf
 sed -i 's/hidescrollbar=false/hidescrollbar=true/' .config/lxterminal/lxterminal.conf
