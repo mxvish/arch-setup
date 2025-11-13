@@ -2,6 +2,8 @@ rfkill unblock bluetooth
 systemctl enable bluetooth.service 
 systemctl start bluetooth.service 
 
+chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
+
 mkdir -p /home/$HOSTNAME/.config/sway
 #cp /etc/sway/config /home/$HOSTNAME/.config/sway
 
