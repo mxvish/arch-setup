@@ -45,8 +45,8 @@ echo -e "
 127.0.0.1\t$HOSTNAME.localdomain\t$HOSTNAME" >> /etc/hosts
 
 pacman -Syu --noconfirm dhcpcd dialog efibootmgr grub ifplugd iwd os-prober vim
-useradd -G wheel,audio,video -m mxvish
-passwd mxvish
+useradd -G wheel,audio,video -m $HOSTNAME
+passwd $HOSTNAME
 grub-install --target=x86_64-efi --efi-directory=/efi/ --bootloader-id=GRUB
 sed -i 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 echo 'GRUB_CMDLINE_LINUX_DEFAULT="psmouse.synaptics_intertouch=1 quiet snd-hda-intel.model=dell-headset-multi"' >> /etc/default/grub
