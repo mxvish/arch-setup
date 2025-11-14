@@ -39,10 +39,10 @@ sed -i 's/#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
 echo 'LANG=en_US.UTF-8' > /etc/locale.conf
 echo 'mxvish' > /etc/hostname
-echo -e '
+echo -e "
 127.0.0.1\tlocalhost
 ::1\t\tlocalhost
-127.0.0.1\tmxvish.localdomain\tmxvish' >> /etc/hosts
+127.0.0.1\t$HOSTNAME.localdomain\t$HOSTNAME" >> /etc/hosts
 
 pacman -Syu --noconfirm dhcpcd dialog efibootmgr grub ifplugd iwd os-prober vim
 useradd -G wheel,audio,video -m mxvish
