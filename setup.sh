@@ -36,6 +36,8 @@ packages=(
 	wget
  	wmenu
 	wl-clipboard
+	xdg-desktop-portal
+	xdg-desktop-portal-wlr
 	xorg-xwayland
  )
 
