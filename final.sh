@@ -44,6 +44,14 @@ git clone --depth=1 https://github.com/github/copilot.vim.git \
   /home/$HOSTNAME/.vim/pack/github/start/copilot.vim
 #run :Copilot setup in vim
 
+echo '
+Section "InputClass"
+        Identifier "system-keyboard"
+        MatchIsKeyboard "on"
+        Option "XkbOptions" "ctrl:nocaps"
+EndSection
+' > /etc/X11/xorg.conf.d/00-keyboard.conf
+
 reboot
 :'
 fcitx
