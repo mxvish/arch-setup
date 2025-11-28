@@ -3,6 +3,7 @@ packages=(
 	bash-completion
 	blueman
 	brightnessctl
+	btop
  	emacs-nox
  	exfatprogs
 	fastfetch
