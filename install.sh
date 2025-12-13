@@ -127,6 +127,7 @@ fullinstall(){
   mv .bashrc /home/$HOSTNAME/
    
   mkdir /mnt/usb
+  mkdir /etc/X11/xorg.conf.d
   
   echo 'Section "InputClass"
        Identifier "libinput touchpad catchall"
