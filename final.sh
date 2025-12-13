@@ -4,6 +4,8 @@ systemctl start bluetooth.service
 
 chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
 
+echo 'exec i3' > /home/$HOSTNAME/.xinitrc
+
 #mkdir -p /home/$HOSTNAME/.config/sway
 ##cp /etc/sway/config /home/$HOSTNAME/.config/sway
 
