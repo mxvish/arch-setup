@@ -114,16 +114,6 @@ fullinstall(){
   
   for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
   
-  #echo -e 'if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
-  #\texec sway
-  #fi' >> /home/$HOSTNAME/.bash_profile
-  
-  echo 'if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-    exec startx
-  fi' >> /home/$HOSTNAME/.bash_profile
-   
-  mv .bashrc /home/$HOSTNAME/
-   
   mkdir /mnt/usb
   mkdir /etc/X11/xorg.conf.d
   
