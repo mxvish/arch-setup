@@ -4,6 +4,7 @@ packages=(
 	blueman
 	brightnessctl
 	btop
+	dmenu
  	emacs-nox
  	exfatprogs
 	fastfetch
@@ -15,6 +16,8 @@ packages=(
  	firefox
  	gcc
 	git
+	i3-wm
+	i3lock
  	i3status
  	lxterminal
 	make
@@ -33,6 +36,7 @@ packages=(
  	tree
 	unzip
 	wget
+	xorg-xinit
  )
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
