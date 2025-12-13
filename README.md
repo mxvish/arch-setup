@@ -25,3 +25,10 @@ Installer &amp; setup script for Arch Linux in i3 on UEFI x86-64 pc
   sh final.sh
   ```
   - For more information about what this command does, see [setup.sh](setup.sh) and [final.sh](final.sh).
+
+# Check difference between codes on local machine and this repository
+```sh
+git clone https://github.com/mxvish/arch-setup.git
+cd arch-setup
+sh check_diff.sh 
+```
