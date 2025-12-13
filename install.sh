@@ -109,6 +109,7 @@ fullinstall(){
    	tree
   	unzip
   	wget
+    xclip
   	xorg-xinit
    )
   
