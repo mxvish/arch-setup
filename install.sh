@@ -110,7 +110,9 @@ fullinstall(){
   	unzip
   	wget
     xclip
+  	xorg-server
   	xorg-xinit
+    xterm
    )
   
   for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
