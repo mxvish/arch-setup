@@ -2,8 +2,6 @@ rfkill unblock bluetooth
 systemctl enable bluetooth.service 
 systemctl start bluetooth.service 
 
-chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
-
 #echo -e 'if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
 #\texec sway
 #fi' >> /home/$HOSTNAME/.bash_profile
@@ -59,6 +57,8 @@ git clone --depth=1 https://github.com/github/copilot.vim.git \
 
 wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/00-keyboard.conf
 mv 00-keyboard.conf /etc/X11/xorg.conf.d/
+
+chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
 
 reboot
 :'
