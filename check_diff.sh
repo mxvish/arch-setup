@@ -2,7 +2,7 @@ echo ''
 
 check_diff(){
   local filename="$1"
-  local targetpath="$2"
+  local targetpath="$2$filename"
 
   diff -q $filename $targetpath 
   if [ $? -ne 0 ]; then
@@ -10,4 +10,4 @@ check_diff(){
   fi
 }
 
-check_diff ".bashrc" "/home/$HOSTNAME/$filename"
+check_diff ".bashrc" "/home/$HOSTNAME/"
