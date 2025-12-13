@@ -120,7 +120,7 @@ fullinstall(){
   
   echo 'if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
     exec startx
-  fi' > >> /home/$HOSTNAME/.bash_profile
+  fi' >> /home/$HOSTNAME/.bash_profile
   
   echo 'exec i3' > /home/$HOSTNAME/.xinitrc
   
