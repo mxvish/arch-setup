@@ -139,7 +139,7 @@ fullinstall(){
 }
 
 if [ $isfullinstallation ]; then
-    fullinstall();
+    fullinstall
 fi
 
 exit
