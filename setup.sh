@@ -15,7 +15,6 @@ packages=(
  	firefox
  	gcc
 	git
-	grim
  	i3status
  	lxterminal
 	make
@@ -31,16 +30,9 @@ packages=(
    	r
 	ranger
 	sudo
- 	sway
- 	swaylock
  	tree
 	unzip
 	wget
- 	wmenu
-	wl-clipboard
-	xdg-desktop-portal
-	xdg-desktop-portal-wlr
-	xorg-xwayland
  )
 
 for i in "${packages[@]}"; do pacman -Syu --noconfirm "$i"; done
