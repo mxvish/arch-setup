@@ -4,6 +4,16 @@ systemctl start bluetooth.service
 
 chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
 
+#echo -e 'if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
+#\texec sway
+#fi' >> /home/$HOSTNAME/.bash_profile
+  
+echo 'if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+  exec startx
+fi' >> /home/$HOSTNAME/.bash_profile
+   
+mv .bashrc /home/$HOSTNAME/
+   
 echo 'exec i3' > /home/$HOSTNAME/.xinitrc
 
 #mkdir -p /home/$HOSTNAME/.config/sway
