@@ -3,7 +3,7 @@ cd arch-setup
 
 echo ''
 
-diff -q bashrc /home/$HOSTNAME/.bashrc
+diff -q .bashrc /home/$HOSTNAME/.bashrc
 
 if [ $? -ne 0 ]; then
   echo "The files are different."
