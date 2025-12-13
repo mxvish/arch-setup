@@ -4,14 +4,15 @@ systemctl start bluetooth.service
 
 chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
 
-mkdir -p /home/$HOSTNAME/.config/sway
-#cp /etc/sway/config /home/$HOSTNAME/.config/sway
+#mkdir -p /home/$HOSTNAME/.config/sway
+##cp /etc/sway/config /home/$HOSTNAME/.config/sway
 
 #sed -i 's/foot/lxterminal/' /home/$HOSTNAME/.config/sway/config
 
 git clone https://github.com/mxvish/i3config.git
 cd i3config
-mv config /home/$HOSTNAME/.config/sway/
+#mv config /home/$HOSTNAME/.config/sway/
+mv config /home/$HOSTNAME/.config/i3/
 sudo mv i3status.conf /etc/
 
 wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/.vimrc
