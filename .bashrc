@@ -66,7 +66,6 @@ function ii {
 	firefox $url
 }
 alias le='less'
-alias li='clisp'
 alias ls='ls --color=auto'
 alias md='sudo mount /dev/sda2 /mnt/usb'
 alias mk='mkdir'
@@ -82,19 +81,17 @@ function sc {
 	done
     firefox $url
 }
-alias si='yay -Sc --noconfirm; yay -Syu --noconfirm; sudo pacman -Sc --noconfirm; sudo pacman -Syu --noconfirm'
+alias si='sudo pacman -Sc --noconfirm; sudo pacman -Syu --noconfirm'
 alias sr='sudo pacman -Qdtq | sudo pacman -Rs - --noconfirm; sudo pacman -R --noconfirm'
 #alias sr='sudo pacman -Rns $(pacman -Qdtq) --noconfirm;sudo pacman -R --noconfirm'
 alias ud='sudo umount /dev/sda2'
 alias v='vim'
 alias va='v ~/a.txt; xc a.txt'
 alias vb='v ~/b; xc b'
-alias vc='vim ~/.config/sway/config'
+alias vc='vim ~/.config/i3/config'
 alias vv='vim ~/.vimrc'
 alias x='xdg-open'
-xc() {
-    cat "$@" | wl-copy
-}
+alias xc='xclip -sel c <'
 
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 PS1='\W $'
@@ -103,5 +100,3 @@ PS1='\W $'
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
-
-swaymsg output HDMI-A-1 position -- -1920 0; swaymsg output eDP-1 position 0 0
