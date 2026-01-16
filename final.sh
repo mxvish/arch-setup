@@ -8,8 +8,7 @@ systemctl start bluetooth.service
   
 mv .bash_profile /home/$HOSTNAME/
 mv .bashrc /home/$HOSTNAME/
-   
-echo 'exec i3' > /home/$HOSTNAME/.xinitrc
+mv .xinitrc /home/$HOSTNAME/
 
 #mkdir -p /home/$HOSTNAME/.config/sway
 ##cp /etc/sway/config /home/$HOSTNAME/.config/sway
