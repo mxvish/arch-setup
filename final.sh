@@ -6,10 +6,7 @@ systemctl start bluetooth.service
 #\texec sway
 #fi' >> /home/$HOSTNAME/.bash_profile
   
-echo 'if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-  exec startx
-fi' >> /home/$HOSTNAME/.bash_profile
-   
+mv .bash_profile /home/$HOSTNAME/
 mv .bashrc /home/$HOSTNAME/
    
 echo 'exec i3' > /home/$HOSTNAME/.xinitrc
