@@ -10,4 +10,5 @@ check_diff(){
   fi
 }
 
+check_diff ".bash_profile" "/home/$HOSTNAME/"
 check_diff ".bashrc" "/home/$HOSTNAME/"
