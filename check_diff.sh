@@ -12,3 +12,4 @@ check_diff(){
 
 check_diff ".bash_profile" "/home/$HOSTNAME/"
 check_diff ".bashrc" "/home/$HOSTNAME/"
+check_diff ".xinitrc" "/home/$HOSTNAME/" 
