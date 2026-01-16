@@ -2,22 +2,12 @@ rfkill unblock bluetooth
 systemctl enable bluetooth.service 
 systemctl start bluetooth.service 
 
-#echo -e 'if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
-#\texec sway
-#fi' >> /home/$HOSTNAME/.bash_profile
-  
 mv .bash_profile /home/$HOSTNAME/
 mv .bashrc /home/$HOSTNAME/
 mv .xinitrc /home/$HOSTNAME/
 
-#mkdir -p /home/$HOSTNAME/.config/sway
-##cp /etc/sway/config /home/$HOSTNAME/.config/sway
-
-#sed -i 's/foot/lxterminal/' /home/$HOSTNAME/.config/sway/config
-
 git clone https://github.com/mxvish/i3config.git
 cd i3config
-#mv config /home/$HOSTNAME/.config/sway/
 mv config /home/$HOSTNAME/.config/i3/
 sudo mv i3status.conf /etc/
 
