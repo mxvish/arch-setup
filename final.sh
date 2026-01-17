@@ -11,12 +11,14 @@ cd i3config
 mv config /home/$HOSTNAME/.config/i3/
 sudo mv i3status.conf /etc/
 
-wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/.vimrc
+git clone https://github.com/mxvish/dotfiles
+cd dotfiles
 mv .vimrc /home/$HOSTNAME/.vimrc
 
-wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/init.el
 mkdir -p /home/$HOSTNAME/.emacs.d/
 mv init.el /home/$HOSTNAME/.emacs.d/
+
+mv 00-keyboard.conf /etc/X11/xorg.conf.d/
 
 pactl set-source-mute @DEFAULT_SOURCE@ toggle
 pactl set-card-profile $(pactl list cards | grep " bluez_card" | cut -d " " -f 2) headset-head-unit
@@ -40,9 +42,6 @@ ln -s /home/$HOSTNAME/Vesktop/dist/linux-unpacked/vesktop /usr/local/bin/vesktop
 git clone --depth=1 https://github.com/github/copilot.vim.git \
   /home/$HOSTNAME/.vim/pack/github/start/copilot.vim
 #run :Copilot setup in vim
-
-wget -q https://raw.githubusercontent.com/mxvish/dotfiles/main/00-keyboard.conf
-mv 00-keyboard.conf /etc/X11/xorg.conf.d/
 
 chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
 
