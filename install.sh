@@ -74,7 +74,7 @@ fullinstall(){
   packages=(
   	acpilight
   	bash-completion
-  	blueman
+  	bluedevil
   	brightnessctl
   	btop
   	dmenu
