@@ -44,7 +44,7 @@ function h {
 	for arg in $@; do
 		url+="$arg+"
 	done
-	url+="&rankBy=score%3Adescending"
+	url+="&disp=40&rankBy=score%3Adescending"
     firefox $url
 }
 function i {
@@ -100,3 +100,5 @@ PS1='\W $'
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+
+pactl set-card-profile $(pactl list cards | grep " bluez_card" | cut -d " " -f 2) headset-head-unit
