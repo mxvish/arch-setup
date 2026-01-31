@@ -98,12 +98,12 @@ fullinstall(){
    	nasm
   	npm
   	noto-fonts-emoji
-  	otf-ipafont
-  	pipewire
+    noto-fonts-cjk 
+    pipewire
   	pipewire-pulse
   	polkit
-    	qemu-desktop
-     	r
+    qemu-desktop
+    r
   	ranger
   	sudo
    	tree
