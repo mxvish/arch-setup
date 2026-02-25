@@ -108,7 +108,6 @@ fullinstall(){
   	sudo
    	tree
   	unzip
-  	wget
     xclip
   	xorg-server
   	xorg-xinit
