@@ -13,3 +13,7 @@ check_diff(){
 check_diff ".bash_profile" "/home/$HOSTNAME/"
 check_diff ".bashrc" "/home/$HOSTNAME/"
 check_diff ".xinitrc" "/home/$HOSTNAME/" 
+
+git clone https://github.com/mxvish/i3config
+cd i3config
+sh check_diff.sh
