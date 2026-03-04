@@ -25,11 +25,11 @@ pactl set-card-profile $(pactl list cards | grep " bluez_card" | cut -d " " -f 2
 
 sed -i  's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
-lxterminal
+#lxterminal
 
-sed -i 's/Monospace 10/Monospace 13/' /home/$HOSTNAME/.config/lxterminal/lxterminal.conf
-sed -i 's/hidemenubar=false/hidemenubar=true/' /home/$HOSTNAME/.config/lxterminal/lxterminal.conf
-sed -i 's/hidescrollbar=false/hidescrollbar=true/' /home/$HOSTNAME/.config/lxterminal/lxterminal.conf
+#sed -i 's/Monospace 10/Monospace 13/' /home/$HOSTNAME/.config/lxterminal/lxterminal.conf
+#sed -i 's/hidemenubar=false/hidemenubar=true/' /home/$HOSTNAME/.config/lxterminal/lxterminal.conf
+#sed -i 's/hidescrollbar=false/hidescrollbar=true/' /home/$HOSTNAME/.config/lxterminal/lxterminal.conf
 
 cd /home/$HOSTNAME/
 npm install --global pnpm
