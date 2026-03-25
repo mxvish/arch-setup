@@ -43,6 +43,8 @@ git clone --depth=1 https://github.com/github/copilot.vim.git \
   /home/$HOSTNAME/.vim/pack/github/start/copilot.vim
 #run :Copilot setup in vim
 
+emacs --eval "(progn (package-initialize) (package-refresh-contents) (package-install 'company))"
+
 chown -R $HOSTNAME:$HOSTNAME /home/$HOSTNAME/
 
 reboot
