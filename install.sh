@@ -106,6 +106,7 @@ fullinstall(){
     qemu-desktop
     r
   	ranger
+    sof-firmware
   	sudo
    	tree
   	unzip
