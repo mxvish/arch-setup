@@ -5,9 +5,6 @@ check_diff(){
   local targetpath="$2$filename"
 
   diff -q $filename $targetpath 
-  if [ $? -ne 0 ]; then
-    echo "WARNING: The file $filename is different from $targetpath."
-  fi
 }
 
 check_diff ".bash_profile" "/home/$HOSTNAME/"
