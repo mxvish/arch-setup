@@ -30,6 +30,7 @@
 #ip a
 
 isfullinstallation=true
+hostnamestring='mxvish'
 
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -40,15 +41,15 @@ hwclock -w
 sed -i 's/#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
 echo 'LANG=en_US.UTF-8' > /etc/locale.conf
-echo 'mxvish' > /etc/hostname
+echo $hostnamestring > /etc/hostname
 echo -e "
 127.0.0.1\tlocalhost
 ::1\t\tlocalhost
-127.0.0.1\t$HOSTNAME.localdomain\t$HOSTNAME" >> /etc/hosts
+127.0.0.1\t$hostnamestring.localdomain\t$hostnamestring" >> /etc/hosts
 
 pacman -Syu --noconfirm dhcpcd dialog efibootmgr grub ifplugd iwd os-prober vim
-useradd -G wheel,audio,video -m $HOSTNAME
-passwd $HOSTNAME
+useradd -G wheel,audio,video -m $hostnamestring
+passwd $hostnamestring
 grub-install --target=x86_64-efi --efi-directory=/efi/
 sed -i 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 echo 'GRUB_CMDLINE_LINUX_DEFAULT="psmouse.synaptics_intertouch=1 quiet snd-hda-intel.model=dell-headset-multi"' >> /etc/default/grub
