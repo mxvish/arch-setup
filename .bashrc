@@ -62,8 +62,6 @@ function ii {
 	firefox $url
 	url+="+pixiv"
 	firefox $url
-	url=`echo "$url" | sed 's/pixiv/dic.nicovideo/'`
-	firefox $url
 }
 alias le='less'
 alias ls='ls --color=auto'
