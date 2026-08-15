@@ -65,12 +65,6 @@ systemctl start iwd.service
 systemctl enable systemd-resolved.service
 systemctl start systemd-resolved.service
 
-echo '[General]
-EnableNetworkConfiguration=true
-
-[Network]
-NameResolvingService=systemd' > /etc/iwd/main.conf
-
 fullinstall(){
   packages=(
   	acpilight
@@ -134,6 +128,12 @@ fullinstall(){
 if [ $isfullinstallation ]; then
     fullinstall
 fi
+
+echo '[General]
+EnableNetworkConfiguration=true
+
+[Network]
+NameResolvingService=systemd' > /etc/iwd/main.conf
 
 exit
 reboot
