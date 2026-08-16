@@ -93,7 +93,7 @@ fullinstall(){
    	nasm
   	npm
   	noto-fonts-emoji
-    noto-fonts-cjk 
+    otf-ipafont
     pipewire
   	pipewire-pulse
   	polkit
