@@ -105,6 +105,7 @@ fullinstall(){
    	tree
   	unzip
     xclip
+    xmonad
   	xorg-server
   	xorg-xinit
     xterm
